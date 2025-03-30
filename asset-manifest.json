@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Recitle/static/css/main.c7cd82f7.css",
+    "main.js": "/Recitle/static/js/main.eaf7f06d.js",
+    "static/media/404.jpeg": "/Recitle/static/media/404.9c0247fac748f462a618.jpeg",
+    "static/media/background3.jpg": "/Recitle/static/media/background3.63cc06d757f61dba2c83.jpg",
+    "index.html": "/Recitle/index.html",
+    "main.c7cd82f7.css.map": "/Recitle/static/css/main.c7cd82f7.css.map",
+    "main.eaf7f06d.js.map": "/Recitle/static/js/main.eaf7f06d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7cd82f7.css",
+    "static/js/main.eaf7f06d.js"
+  ]
+}

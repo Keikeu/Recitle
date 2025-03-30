@@ -1,0 +1,11 @@
+{
+  "printWidth": 120,
+  "bracketSpacing": true,
+  "htmlWhitespaceSensitivity": "css",
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "singleQuote": false,
+  "arrowParens": "avoid",
+  "tabWidth": 2,
+  "trailingComma": "es5"
+}
