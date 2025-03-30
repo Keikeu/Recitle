@@ -1,0 +1,22 @@
+{
+  // Show rulers so that you know when you are over 120
+  "editor.rulers": [120],
+  // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
+  // "editor.formatOnSave": true,
+  // Enable/disable default JavaScript formatter (For Prettier)
+  // "javascript.format.enable": false,
+  // Only solution to make eslint rules work properly now: https://github.com/prettier/prettier-vscode#linter-integration
+  // Previous installed thing was broken by our upgrade to ESLint 6: https://github.com/prettier/prettier-vscode/issues/870#issuecomment-582082986
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": true
+  // },
+  "workbench.colorCustomizations": {
+    "[Atom One Dark]": {
+      "editorGroup.border": "#666",
+      "panel.border": "#666",
+      "tab.activeBackground": "#000",
+      "tab.activeBorder": "#aaf",
+      "editor.background": "#1C1C21"
+    }
+  }
+}
