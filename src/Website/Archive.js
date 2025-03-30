@@ -10,6 +10,7 @@ import Icon from "commons/components/Icon";
 import { GAME_STATE } from "./Home";
 import { useMediaQuery } from "commons/util/useMediaQuery";
 import { BREAKPOINTS } from "commons/util/breakpoints";
+import { isBefore, isEqual, isFuture, isPast, parseISO } from "date-fns";
 
 const Box = styled.div`
   overflow-x: hidden;
@@ -34,7 +35,7 @@ const SongBox = styled(Link)`
   background-color: #1e0e1a33;
   border-radius: var(--border-radius-2);
   border: 2px solid rgba(255, 0, 255, 0.5);
-  backdrop-filter: blur(24px);
+  backdrop-filter: blur(16px);
 
   &:hover {
     background-color: #1e0e1a80;
@@ -103,34 +104,39 @@ function Archive({ className }) {
           Archive
         </Typography>
 
-        {songs.map((song, index) => {
-          const archiveItem = songArchive?.[song.id] || {};
-          const maxVerses = song.lyricsOriginal.length;
+        {songs
+          .filter(item => {
+            const itemDate = parseISO(item.date);
+            return isBefore(itemDate, new Date()) || isEqual(itemDate, new Date());
+          })
+          .map((song, index) => {
+            const archiveItem = songArchive?.[song.id] || {};
+            const maxVerses = song.lyricsOriginal.length;
 
-          return (
-            <SongBox key={index} to={`/?id=${song.id}`}>
-              <Typography variant="h4">#{songs.length - index}</Typography>
-              {!isSmallScreen && <Typography variant="body">{song.date}</Typography>}
-              <Squares
-                maxVerses={maxVerses}
-                steps={archiveItem.steps}
-                state={archiveItem.state}
-                shrink={isSmallScreen}
-              />
-              <StatusIcon
-                name={
-                  !archiveItem.state || archiveItem.state === GAME_STATE.PLAYING
-                    ? "chevron_right"
-                    : archiveItem.state === GAME_STATE.WON
-                    ? "check"
-                    : "close"
-                }
-                size={24}
-                $state={archiveItem.state}
-              />
-            </SongBox>
-          );
-        })}
+            return (
+              <SongBox key={index} to={`/?id=${song.id}`}>
+                <Typography variant="h4">#{songs.length - index}</Typography>
+                {!isSmallScreen && <Typography variant="body">{song.date}</Typography>}
+                <Squares
+                  maxVerses={maxVerses}
+                  steps={archiveItem.steps}
+                  state={archiveItem.state}
+                  shrink={isSmallScreen}
+                />
+                <StatusIcon
+                  name={
+                    !archiveItem.state || archiveItem.state === GAME_STATE.PLAYING
+                      ? "chevron_right"
+                      : archiveItem.state === GAME_STATE.WON
+                      ? "check"
+                      : "close"
+                  }
+                  size={24}
+                  $state={archiveItem.state}
+                />
+              </SongBox>
+            );
+          })}
       </Container>
     </Box>
   );

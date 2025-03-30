@@ -1,5 +1,9 @@
 export const songOptions = [
   {
+    id: "6",
+    label: "Wonderwall - Oasis",
+  },
+  {
     id: "5",
     label: "Bad Guy - Billie Eilish",
   },
@@ -98,10 +102,6 @@ export const songOptions = [
   {
     id: "021",
     label: "We Will Rock You - Queen",
-  },
-  {
-    id: "022",
-    label: "Wonderwall - Oasis",
   },
   {
     id: "023",

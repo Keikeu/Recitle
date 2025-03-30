@@ -8,6 +8,8 @@ import Squares from "./Squares";
 import { useMediaQuery } from "commons/util/useMediaQuery";
 import { BREAKPOINTS } from "commons/util/breakpoints";
 import ConfettiExplosion from "react-confetti-explosion";
+import Button from "commons/components/Button";
+import { useToast } from "commons/util/useToast";
 
 const Box = styled.div`
   margin: 0 auto;
@@ -16,7 +18,12 @@ const Box = styled.div`
   max-width: 100%;
 `;
 
+const SquaresStyled = styled(Squares)`
+  margin-bottom: 24px;
+`;
+
 const Paragraph = styled(Typography)`
+  width: 100%;
   white-space: pre-wrap;
 
   @media (max-width: ${BREAKPOINTS.small}) {
@@ -30,8 +37,37 @@ const ConfettiExplosionStyled = styled(ConfettiExplosion)`
   left: 50%;
 `;
 
+const LyricsWrap = styled(Flexbox)`
+  border-radius: var(--border-radius-3);
+  border: 4px solid rgba(255, 0, 255, 0.5);
+  padding: 16px;
+  backdrop-filter: blur(16px);
+`;
+
 function EndScreen({ className, song, state, steps }) {
+  const { showToast } = useToast();
   const isSmallScreen = useMediaQuery(BREAKPOINTS.small);
+
+  const maxVerses = song.lyricsModified.length;
+  const stepsToDisplay = state === GAME_STATE.LOST ? steps : steps - 1;
+
+  function copyToClipboard() {
+    navigator.clipboard
+      .writeText(
+        `Recitle ${song.number}: ${steps}/${maxVerses} 
+${Array.from({ length: maxVerses })
+  .map((_, index) => {
+    return index < stepsToDisplay ? "🟥" : index === stepsToDisplay && state === GAME_STATE.WON ? "🟩" : "⬜";
+  })
+  .join("")}`
+      )
+      .then(() => {
+        showToast("Copied to clipboard");
+      })
+      .catch(err => {
+        console.error("Failed to copy: ", err);
+      });
+  }
 
   return (
     <>
@@ -42,7 +78,11 @@ function EndScreen({ className, song, state, steps }) {
             {state === GAME_STATE.WON ? "Victory!" : "Game over"}
           </Typography>
 
-          <Squares maxVerses={song.lyricsModified.length} steps={steps - 1} state={state} />
+          <SquaresStyled maxVerses={maxVerses} steps={stepsToDisplay} state={state} />
+
+          <Button icon="share" onClick={copyToClipboard}>
+            Share
+          </Button>
 
           <Typography variant={isSmallScreen ? "h4" : "h3"} marginTop={68} marginBottom={24}>
             &quot;{song.title}&quot; by {song.artist}
@@ -60,7 +100,7 @@ function EndScreen({ className, song, state, steps }) {
           ></iframe>
         </Flexbox>
 
-        <Flexbox flexDirection="column" gap={40} marginTop={56}>
+        <LyricsWrap flexDirection="column" gap={40} marginTop={56}>
           {isSmallScreen ? (
             <>
               <Paragraph variant="h4">{song.style} style</Paragraph>
@@ -80,19 +120,19 @@ function EndScreen({ className, song, state, steps }) {
             </>
           ) : (
             <>
-              <Flexbox gap={40}>
+              <Flexbox gap={24}>
                 <Paragraph variant="h4">{song.style} style</Paragraph>
                 <Paragraph variant="h4">Original</Paragraph>
               </Flexbox>
               {song.lyricsOriginal.map((_, index) => (
-                <Flexbox gap={40} key={index}>
+                <Flexbox gap={24} key={index}>
                   <Paragraph variant="paragraph">{song.lyricsModified[index]}</Paragraph>
                   <Paragraph variant="paragraph">{song.lyricsOriginal[index]}</Paragraph>
                 </Flexbox>
               ))}
             </>
           )}
-        </Flexbox>
+        </LyricsWrap>
       </Box>
     </>
   );
@@ -102,6 +142,7 @@ EndScreen.propTypes = {
   className: T.string,
   song: T.shape({
     id: T.string,
+    number: T.number,
     title: T.string,
     artist: T.string,
     lyricsOriginal: T.arrayOf(T.string),

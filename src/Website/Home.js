@@ -13,6 +13,7 @@ import { useSearchParams } from "react-router-dom";
 import EndScreen from "./components/EndScreen";
 import Squares from "./components/Squares";
 import { useMediaQuery } from "commons/util/useMediaQuery";
+import { format } from "date-fns";
 
 const Box = styled.div`
   position: relative;
@@ -97,7 +98,7 @@ function Home() {
 
   const currentSong = songId
     ? songs.find(song => song.id === songId)
-    : songs.find(song => song.date === new Date().toLocaleDateString("en-gb"));
+    : songs.find(song => song.date === format(new Date(), "yyyy-MM-dd"));
   const { id, lyricsModified } = currentSong;
   const maxVerses = lyricsModified.length;
   const wasPlayed = songArchive && songArchive[id];
@@ -144,9 +145,9 @@ function Home() {
       newState = GAME_STATE.PLAYING;
     }
 
+    saveGameState(newState, newStep);
     setGameState(newState);
     setStep(newStep);
-    saveGameState(newState, newStep);
     setGuess("");
   }
 
@@ -160,9 +161,9 @@ function Home() {
       newState = GAME_STATE.PLAYING;
     }
 
+    saveGameState(newState, newStep);
     setGameState(newState);
     setStep(newStep);
-    saveGameState(newState, newStep);
   }
 
   if (loading) {

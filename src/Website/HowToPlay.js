@@ -21,8 +21,9 @@ const Container = styled.main`
 `;
 
 const InstructionBox = styled(Flexbox)`
-  border-radius: var(--border-radius-2);
+  border-radius: var(--border-radius-3);
   border: 4px solid rgba(255, 0, 255, 0.5);
+  backdrop-filter: blur(16px);
   margin-bottom: 32px;
 `;
 

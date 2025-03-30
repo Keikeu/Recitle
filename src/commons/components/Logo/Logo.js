@@ -9,9 +9,9 @@ const LogoLink = styled(Link)`
   font-weight: 700;
   font-size: 32px;
   line-height: 32px;
-  letter-spacing: 0.1em;
+  letter-spacing: 1.5px;
   color: var(--neutral-200);
-  text-shadow: 0px 2px 4px rgba(255, 0, 255, 0.8), 0px 0px 1px rgba(255, 0, 255, 1);
+  text-shadow: 0px 2px 4px rgba(255, 0, 255, 1), 0px 0px 1px rgba(255, 0, 255, 1);
   text-transform: uppercase;
 
   &:first-letter {
