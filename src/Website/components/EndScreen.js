@@ -7,6 +7,7 @@ import { GAME_STATE } from "Website/Home";
 import Squares from "./Squares";
 import { useMediaQuery } from "commons/util/useMediaQuery";
 import { BREAKPOINTS } from "commons/util/breakpoints";
+import ConfettiExplosion from "react-confetti-explosion";
 
 const Box = styled.div`
   margin: 0 auto;
@@ -23,68 +24,77 @@ const Paragraph = styled(Typography)`
   }
 `;
 
+const ConfettiExplosionStyled = styled(ConfettiExplosion)`
+  position: absolute;
+  top: 0;
+  left: 50%;
+`;
+
 function EndScreen({ className, song, state, steps }) {
   const isSmallScreen = useMediaQuery(BREAKPOINTS.small);
 
   return (
-    <Box className={className}>
-      <Flexbox alignItems="center" flexDirection="column">
-        <Typography variant={isSmallScreen ? "h2" : "h1"} marginBottom={24}>
-          {state === GAME_STATE.WON ? "Victory!" : "Game over"}
-        </Typography>
+    <>
+      {state === GAME_STATE.WON && <ConfettiExplosionStyled />}
+      <Box className={className}>
+        <Flexbox alignItems="center" flexDirection="column">
+          <Typography variant={isSmallScreen ? "h2" : "h1"} marginBottom={24}>
+            {state === GAME_STATE.WON ? "Victory!" : "Game over"}
+          </Typography>
 
-        <Squares maxVerses={song.lyricsModified.length} steps={steps - 1} state={state} />
+          <Squares maxVerses={song.lyricsModified.length} steps={steps - 1} state={state} />
 
-        <Typography variant={isSmallScreen ? "h4" : "h3"} marginTop={68} marginBottom={24}>
-          &quot;{song.title}&quot; by {song.artist}
-        </Typography>
+          <Typography variant={isSmallScreen ? "h4" : "h3"} marginTop={68} marginBottom={24}>
+            &quot;{song.title}&quot; by {song.artist}
+          </Typography>
 
-        <iframe
-          width={isSmallScreen ? "320" : "680"}
-          height={isSmallScreen ? "200" : "400"}
-          src={song.link}
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-      </Flexbox>
+          <iframe
+            width={isSmallScreen ? "320" : "680"}
+            height={isSmallScreen ? "200" : "400"}
+            src={song.link}
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </Flexbox>
 
-      <Flexbox flexDirection="column" gap={40} marginTop={56}>
-        {isSmallScreen ? (
-          <>
-            <Paragraph variant="h4">{song.style} style</Paragraph>
-            {song.lyricsOriginal.map((_, index) => (
-              <Paragraph key={index} variant="paragraph">
-                {song.lyricsModified[index]}
-              </Paragraph>
-            ))}
-            <Paragraph variant="h4" marginTop={40}>
-              Original
-            </Paragraph>
-            {song.lyricsOriginal.map((_, index) => (
-              <Paragraph key={index} variant="paragraph">
-                {song.lyricsOriginal[index]}
-              </Paragraph>
-            ))}
-          </>
-        ) : (
-          <>
-            <Flexbox gap={40}>
+        <Flexbox flexDirection="column" gap={40} marginTop={56}>
+          {isSmallScreen ? (
+            <>
               <Paragraph variant="h4">{song.style} style</Paragraph>
-              <Paragraph variant="h4">Original</Paragraph>
-            </Flexbox>
-            {song.lyricsOriginal.map((_, index) => (
-              <Flexbox gap={40} key={index}>
-                <Paragraph variant="paragraph">{song.lyricsModified[index]}</Paragraph>
-                <Paragraph variant="paragraph">{song.lyricsOriginal[index]}</Paragraph>
+              {song.lyricsOriginal.map((_, index) => (
+                <Paragraph key={index} variant="paragraph">
+                  {song.lyricsModified[index]}
+                </Paragraph>
+              ))}
+              <Paragraph variant="h4" marginTop={40}>
+                Original
+              </Paragraph>
+              {song.lyricsOriginal.map((_, index) => (
+                <Paragraph key={index} variant="paragraph">
+                  {song.lyricsOriginal[index]}
+                </Paragraph>
+              ))}
+            </>
+          ) : (
+            <>
+              <Flexbox gap={40}>
+                <Paragraph variant="h4">{song.style} style</Paragraph>
+                <Paragraph variant="h4">Original</Paragraph>
               </Flexbox>
-            ))}
-          </>
-        )}
-      </Flexbox>
-    </Box>
+              {song.lyricsOriginal.map((_, index) => (
+                <Flexbox gap={40} key={index}>
+                  <Paragraph variant="paragraph">{song.lyricsModified[index]}</Paragraph>
+                  <Paragraph variant="paragraph">{song.lyricsOriginal[index]}</Paragraph>
+                </Flexbox>
+              ))}
+            </>
+          )}
+        </Flexbox>
+      </Box>
+    </>
   );
 }
 
