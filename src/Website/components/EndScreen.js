@@ -10,6 +10,8 @@ import { BREAKPOINTS } from "commons/util/breakpoints";
 import ConfettiExplosion from "react-confetti-explosion";
 import Button from "commons/components/Button";
 import { useToast } from "commons/util/useToast";
+import Countdown from "react-countdown";
+import { addDays, startOfDay } from "date-fns";
 
 const Box = styled.div`
   margin: 0 auto;
@@ -133,6 +135,10 @@ ${Array.from({ length: maxVerses })
             </>
           )}
         </LyricsWrap>
+
+        <Typography variant="paragraph" marginY={24}>
+          Next Recitle in: <Countdown date={startOfDay(addDays(new Date(), 1))} daysInHours />
+        </Typography>
       </Box>
     </>
   );
