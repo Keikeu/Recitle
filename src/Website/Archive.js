@@ -58,7 +58,7 @@ const SongBox = styled(Link)`
 const StatusIcon = styled(Icon)`
   position: relative;
   margin-left: auto;
-  color: #00ffff;
+  color: #ff00ff;
 
   &:after {
     content: "";
@@ -100,7 +100,7 @@ function Archive({ className }) {
   return (
     <Box className={className}>
       <Container>
-        <Typography variant={isSmallScreen ? "h3" : "h1"} marginBottom={24} marginTop={isSmallScreen ? 24 : 0}>
+        <Typography variant={isSmallScreen ? "h3" : "h2"} marginBottom={24} marginTop={isSmallScreen ? 24 : 0}>
           Archive
         </Typography>
 

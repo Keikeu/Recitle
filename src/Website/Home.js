@@ -1,6 +1,5 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import styled from "styled-components/macro";
-import Typography from "commons/components/Typography";
 import { BREAKPOINTS } from "commons/util/breakpoints";
 import { songs } from "data/songs.const";
 import Flexbox from "commons/components/Flexbox";
@@ -14,6 +13,7 @@ import EndScreen from "./components/EndScreen";
 import Squares from "./components/Squares";
 import { useMediaQuery } from "commons/util/useMediaQuery";
 import { format } from "date-fns";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Box = styled.div`
   position: relative;
@@ -76,8 +76,11 @@ const LyricsWrap = styled(Flexbox)`
   margin: 0 auto;
 `;
 
-const Paragraph = styled(Typography)`
+const Paragraph = styled(motion.p)`
+  font-size: 18px;
+  line-height: 30px;
   white-space: pre;
+
   @media (max-width: ${BREAKPOINTS.medium}) {
     white-space: pre-wrap;
   }
@@ -115,6 +118,16 @@ function Home() {
     }
     setLoading(false);
   }, [wasPlayed, songArchive, id]);
+
+  const lyricsRefs = useRef([]);
+  useEffect(() => {
+    if (lyricsRefs.current[step]) {
+      lyricsRefs.current[step].scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }
+  }, [step]);
 
   const saveGameState = useCallback(
     (stateToSave, stepToSave) => {
@@ -209,19 +222,39 @@ function Home() {
         {gameState === GAME_STATE.PLAYING && (
           <LyricsSection>
             <LyricsWrap flexDirection="column" gap={24}>
-              {lyricsModified.map((verse, verseIndex) => (
-                <React.Fragment key={verseIndex}>
-                  {verseIndex <= step ? (
-                    <Paragraph variant="paragraph">{verse}</Paragraph>
-                  ) : (
-                    <Flexbox flexDirection="column" gap={12} paddingY={6}>
-                      {verse.split(/\n/).map((line, lineIndex) => (
-                        <Skeleton key={lineIndex} width={`${line.length * 7}px`} height="18px" />
-                      ))}
-                    </Flexbox>
-                  )}
-                </React.Fragment>
-              ))}
+              <AnimatePresence mode="sync">
+                {lyricsModified.map((verse, verseIndex) => (
+                  <div key={verseIndex} ref={el => (lyricsRefs.current[verseIndex] = el)}>
+                    {verseIndex <= step ? (
+                      <Paragraph
+                        key={verseIndex}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.4 }}
+                      >
+                        {verse}
+                      </Paragraph>
+                    ) : (
+                      <Flexbox
+                        key={verseIndex}
+                        as={motion.div}
+                        flexDirection="column"
+                        gap={12}
+                        paddingY={6}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.4 }}
+                      >
+                        {verse.split(/\n/).map((line, lineIndex) => (
+                          <Skeleton key={lineIndex} width={`${line.length * 7}px`} height="18px" />
+                        ))}
+                      </Flexbox>
+                    )}
+                  </div>
+                ))}
+              </AnimatePresence>
             </LyricsWrap>
           </LyricsSection>
         )}
