@@ -15,7 +15,7 @@ const root = createRoot(container);
 
 root.render(
   // <React.StrictMode>
-  <BrowserRouter>
+  <BrowserRouter basename="/Recitle">
     <Routes>
       <Route path="/" element={<Website />}>
         <Route index element={<Home />} />
