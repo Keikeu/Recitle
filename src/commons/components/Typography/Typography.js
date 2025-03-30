@@ -27,7 +27,7 @@ const StyledComponent = styled.div`
       line-height: 64px;
       font-weight: 800;
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.02em;
       text-shadow: 0px 2px 4px rgba(255, 0, 255, 0.8), 0px 0px 1px rgba(255, 0, 255, 1);
     `};
 
@@ -38,7 +38,7 @@ const StyledComponent = styled.div`
       font-size: 36px;
       line-height: 48px;
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.02em;
       text-shadow: 0px 2px 4px rgba(255, 0, 255, 0.8), 0px 0px 1px rgba(255, 0, 255, 1);
     `};
 

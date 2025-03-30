@@ -4,9 +4,10 @@ import styled, { css } from "styled-components/macro";
 
 const Box = styled.div`
   position: relative;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: var(--border-radius-2);
   width: ${({ width }) => width};
+  max-width: 100%;
   height: ${({ height }) => height};
   flex-shrink: 0;
   overflow: hidden;

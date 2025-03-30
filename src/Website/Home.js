@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import styled from "styled-components/macro";
 import Typography from "commons/components/Typography";
 import { BREAKPOINTS } from "commons/util/breakpoints";
@@ -12,6 +12,7 @@ import callLocalStorage from "commons/util/callLocalStorage";
 import { useSearchParams } from "react-router-dom";
 import EndScreen from "./components/EndScreen";
 import Squares from "./components/Squares";
+import { useMediaQuery } from "commons/util/useMediaQuery";
 
 const Box = styled.div`
   position: relative;
@@ -25,6 +26,12 @@ const Container = styled.main`
   max-width: 100%;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: ${BREAKPOINTS.medium}) {
+    flex-direction: column-reverse;
+  }
 `;
 
 const GuessSection = styled.section`
@@ -36,6 +43,11 @@ const GuessSection = styled.section`
   padding: 32px 16px;
   margin: 0 auto;
   z-index: var(--z-index-above);
+
+  @media (max-width: ${BREAKPOINTS.medium}) {
+    width: 100%;
+    padding: 24px;
+  }
 `;
 
 const ComboboxStyled = styled(Combobox)`
@@ -47,17 +59,27 @@ const LyricsSection = styled.section`
   width: 100%;
   margin: 0 auto;
   padding: 40px 0;
-  height: calc(100vh - 60px - 144px);
+  height: calc(100vh - 80px - 144px);
   overflow-y: auto;
+
+  @media (max-width: ${BREAKPOINTS.medium}) {
+    padding-left: 24px;
+    padding-right: 24px;
+    height: calc(100vh - 80px - 176px);
+  }
 `;
 
 const LyricsWrap = styled(Flexbox)`
   width: 680px;
+  max-width: 100%;
   margin: 0 auto;
 `;
 
 const Paragraph = styled(Typography)`
   white-space: pre;
+  @media (max-width: ${BREAKPOINTS.medium}) {
+    white-space: pre-wrap;
+  }
 `;
 
 export const GAME_STATE = {
@@ -67,6 +89,7 @@ export const GAME_STATE = {
 };
 
 function Home() {
+  const isSmallScreen = useMediaQuery(BREAKPOINTS.small);
   const [searchParams] = useSearchParams();
   const songId = searchParams.get("id");
 
@@ -79,15 +102,17 @@ function Home() {
   const maxVerses = lyricsModified.length;
   const wasPlayed = songArchive && songArchive[id];
 
-  const [step, setStep] = React.useState(0);
-  const [guess, setGuess] = React.useState("");
-  const [gameState, setGameState] = React.useState(GAME_STATE.PLAYING);
+  const [loading, setLoading] = useState(true);
+  const [step, setStep] = useState(0);
+  const [guess, setGuess] = useState("");
+  const [gameState, setGameState] = useState(GAME_STATE.PLAYING);
 
   useEffect(() => {
     if (wasPlayed) {
       setStep(songArchive[id]?.steps);
       setGameState(songArchive[id]?.state);
     }
+    setLoading(false);
   }, [wasPlayed, songArchive, id]);
 
   const saveGameState = useCallback(
@@ -104,6 +129,10 @@ function Home() {
   );
 
   function handleGuess() {
+    if (!guess) {
+      return;
+    }
+
     const newStep = step + 1;
     let newState;
 
@@ -136,28 +165,43 @@ function Home() {
     saveGameState(newState, newStep);
   }
 
+  if (loading) {
+    return null;
+  }
+
   return (
     <Box>
       <Container>
         {gameState === GAME_STATE.PLAYING && (
           <GuessSection>
+            {isSmallScreen && (
+              <>
+                <Squares maxVerses={maxVerses} steps={step} state={gameState} />
+                <ComboboxStyled
+                  value={guess}
+                  onChange={songId => setGuess(songId)}
+                  placeholder="Search for a song..."
+                  options={songOptions.sort((a, b) => a.label.localeCompare(b.label))}
+                />
+              </>
+            )}
             <Flexbox gap={12} style={{ width: "100%" }}>
-              <Button variant="tertiary" onClick={handleSkip} disabled={step >= maxVerses}>
+              <Button variant="tertiary" onClick={handleSkip} fullWidth={isSmallScreen}>
                 Skip
               </Button>
-              <ComboboxStyled
-                value={guess}
-                onChange={songId => setGuess(songId)}
-                placeholder="Search for a song..."
-                options={songOptions}
-              />
-              <Button onClick={handleGuess} disabled={step >= maxVerses || !guess}>
+              {!isSmallScreen && (
+                <ComboboxStyled
+                  value={guess}
+                  onChange={songId => setGuess(songId)}
+                  placeholder="Search for a song..."
+                  options={songOptions.sort((a, b) => a.label.localeCompare(b.label))}
+                />
+              )}
+              <Button onClick={handleGuess} fullWidth={isSmallScreen}>
                 Submit
               </Button>
             </Flexbox>
-            <Flexbox gap={12}>
-              <Squares maxVerses={maxVerses} steps={step} state={gameState} />
-            </Flexbox>
+            {!isSmallScreen && <Squares maxVerses={maxVerses} steps={step} state={gameState} />}
           </GuessSection>
         )}
         {gameState !== GAME_STATE.PLAYING && <EndScreen song={currentSong} state={gameState} steps={step} />}

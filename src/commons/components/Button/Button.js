@@ -85,16 +85,14 @@ const buttonStyle = css`
   ${({ variant }) =>
     variant === "tertiary" &&
     css`
-      color: var(--neutral-120);
-      font-weight: 400;
-      background-color: var(--neutral-200);
-      box-shadow: inset 0px 0px 0px 1px var(--neutral-180);
+      color: var(--primary-100);
+      font-weight: 500;
+      background-color: var(--primary-170);
 
       ${({ disabled }) => {
         if (disabled) {
           return css`
-            background-color: var(--neutral-190);
-            color: var(--neutral-170);
+            background-color: var(--primary-140);
             svg {
               fill: var(--neutral-170);
             }
@@ -103,10 +101,12 @@ const buttonStyle = css`
           return css`
             &:hover,
             &:focus-visible {
-              background-color: var(--neutral-190);
+              background-color: var(--primary-140);
+              color: var(--primary-70);
             }
             &:active {
-              background-color: var(--neutral-180);
+              background-color: var(--primary-100);
+              color: var(--primary-70);
             }
           `;
         }

@@ -1,11 +1,12 @@
 :root {
-  --primary-70: #b3535e;
-  --primary-90: #e66a79;
-  --primary-100: #ff7686;
-  --primary-140: #ffadb6;
-  --primary-170: #ffd6db;
-  --primary-180: #ffe4e7;
-  --primary-190: #fff1f3;
+  --primary-20: #1e0e1a;
+  --primary-70: #68325c;
+  --primary-90: #854176;
+  --primary-100: #944883;
+  --primary-140: #bf91b5;
+  --primary-170: #dfc8da;
+  --primary-180: #eadae6;
+  --primary-190: #f4edf3;
 
   --secondary-100: #9886b3;
   --secondary-190: #f4f2f7;
@@ -152,11 +153,11 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--neutral-40);
+  background: var(--neutral-80);
 }
 
 *::-webkit-scrollbar-thumb {
-  background: var(--neutral-80);
+  background: var(--neutral-140);
   border-radius: 4px;
 }
 

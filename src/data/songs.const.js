@@ -1,5 +1,131 @@
 export const songs = [
   {
+    id: "5",
+    date: "31/03/2025",
+    title: "Bad Guy",
+    artist: "Billie Eilish",
+    link: "https://www.youtube.com/embed/DyDfgMOUjCI",
+    style: "Gen Z Slang",
+    lyricsOriginal: [
+      `White shirt now red, my bloody nose
+Sleeping, you're on your tippy toes
+Creeping around like no one knows
+Think you're so criminal`,
+
+      `Bruises on both my knees for you
+Don't say thank you or please, I do
+What I want when I'm wanting to
+My soul? So cynical`,
+
+      `So you're a tough guy
+Like-it-really-rough guy
+Just-can't-get-enough guy
+Chest-always-so-puffed guy
+I'm that bad type
+Make-your-mama-sad type
+Make-your-girlfriend-mad type
+Might-seduce-your-dad type
+I'm the bad guy, duh`,
+
+      `I'm the bad guy`,
+
+      `I like it when you take control
+Even if you know that you don't
+Own me, I'll let you play the role
+I'll be your animal`,
+
+      `My mommy likes to sing along
+With me but she won't sing this song
+If she reads all the lyrics
+She'll pity the men I know`,
+
+      `So you're a tough guy
+Like-it-really-rough guy
+Just-can't-get-enough guy
+Chest-always-so-puffed guy
+I'm that bad type
+Make-your-mama-sad type
+Make-your-girlfriend-mad type
+Might-seduce-your-dad type
+I'm the bad guy, duh`,
+
+      `I'm the bad guy, duh`,
+
+      `I'm only good at being bad
+Bad`,
+
+      `I like when you get mad
+I guess I'm pretty glad
+That you're alone
+You said she's scared of me?
+I mean
+I don't see what she sees
+But maybe it's 'cause I'm wearing your cologne`,
+
+      `I'm a bad guy
+I'm, I'm a bad guy
+Bad guy, bad guy
+I'm a bad guy`,
+    ],
+    lyricsModified: [
+      `White tee now red, 'cause my nose is a crime scene,
+You sleepin', but you creeping, always on your tiptoes.
+Lurking 'round like no one knows, thinking you're a criminal,
+Bruh, you really think you're slick? LMAO, ok, chill.`,
+
+      `Bruises on my knees? Yeah, for you, I'm down.
+No “thank you” or “please,” I don’t even need that.
+I do what I want, whenever I feel like it,
+Soul’s pretty messed up, real cynical with it.`,
+
+      `Oh, you a tough guy?
+Big talk, rough vibes, can’t get enough, guy.
+Puffed chest, flexin' hard, like a gym rat guy,
+I'm the bad type,
+Make-your-mom-cry type,
+Make-your-girlfriend-mad type,
+Might-steal-your-dad type.
+I'm the bad guy, duh.`,
+
+      `Yeah, I'm that bad guy.`,
+
+      `I like when you act in charge,
+Even though we both know you don't.
+You don’t own me, but go ahead, play your role,
+I’ll be your animal, if that's what you want.`,
+
+      `My mom vibes with me, sings to my tracks,
+But this one? Nah, she won't sing along to that.
+She reads the lyrics, and I know she’s shook,
+Feeling bad for these dudes, that’s all it took.`,
+
+      `Oh, you a tough guy?
+Big talk, rough vibes, can’t get enough, guy.
+Puffed chest, flexin' hard, like a gym rat guy,
+I'm the bad type,
+Make-your-mom-cry type,
+Make-your-girlfriend-mad type,
+Might-steal-your-dad type.
+I'm the bad guy, duh.`,
+
+      `Yeah, I’m still the bad guy.`,
+
+      `I'm good at being bad, that's my whole vibe.
+Bad? Yep, it's what I do best, no cap.`,
+
+      `Love when you get mad, it’s kinda fun.
+Guess I'm low-key happy that you're solo.
+She said she's scared of me? LMAO, why tho?
+I don’t see it, but maybe it’s 'cause I rock your cologne.`,
+
+      `Yeah, I’m the bad guy.
+You know it, I know it, we all know it.
+Bad guy, menace, chaos is my game.
+I'm the bad guy.`,
+    ],
+  },
+
+  {
     id: "4",
     date: "30/03/2025",
     title: "Smooth Criminal",

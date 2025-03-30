@@ -1,10 +1,14 @@
-import React from "react";
+import React, { use, useEffect } from "react";
 import styled, { css } from "styled-components/macro";
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import Logo from "commons/components/Logo";
 import Flexbox from "commons/components/Flexbox";
 import { Helmet } from "react-helmet";
 import BackgroundImage from "commons/images/background3.jpg"; // webp
+import callLocalStorage from "commons/util/callLocalStorage";
+import { useMediaQuery } from "commons/util/useMediaQuery";
+import { BREAKPOINTS } from "commons/util/breakpoints";
+import Icon from "commons/components/Icon";
 
 const Box = styled.div`
   background-size: cover;
@@ -14,13 +18,13 @@ const Box = styled.div`
 
   &:before {
     content: "";
-    position: absolute;
+    position: fixed;
     width: 100%;
+    height: 100%;
     left: 0;
     top: 0;
-    bottom: 0;
-    background: linear-gradient(180deg, var(--neutral-80) 0%, var(--primary-70) 100%);
-    opacity: 0.9;
+    background: linear-gradient(180deg, #1e0e1a 0%, #b3535e 100%);
+    opacity: 0.6;
   }
 `;
 
@@ -31,32 +35,63 @@ const Header = styled.header`
 `;
 
 const Navigation = styled(Flexbox)`
-  height: 60px;
+  height: 80px;
   padding: 0 32px;
   width: 100%;
+
+  @media (max-width: ${BREAKPOINTS.small}) {
+    padding: 0 12px;
+    background-color: #301d44;
+  }
 `;
 
 const LogoStyled = styled(Logo)`
   margin-right: auto;
+
+  @media (max-width: ${BREAKPOINTS.small}) {
+    margin-left: auto;
+  }
 `;
 
 const LinkStyled = styled(Link)`
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: var(--neutral-180);
-  padding: 4px 8px;
+  color: var(--primary-190);
+  background-color: #1e0e1a99;
+  padding: 8px 12px;
+  border-radius: var(--border-radius-1);
 
   ${({ $isActive }) =>
     $isActive &&
     css`
-      color: var(--primary-100);
-      font-weight: 700;
+      background-color: #68325c99;
     `};
+
+  @media (max-width: ${BREAKPOINTS.small}) {
+    padding: 14px;
+  }
 `;
 
 function Website() {
   const location = useLocation();
+  const navigate = useNavigate();
+  const sawHowToPlay = callLocalStorage("sawHowToPlay");
+
+  const isSmallScreen = useMediaQuery(BREAKPOINTS.small);
+
+  useEffect(() => {
+    if (!sawHowToPlay) {
+      callLocalStorage("sawHowToPlay", "set", true);
+      setTimeout(() => {
+        navigate("/help");
+      }, 0);
+    }
+  }, [sawHowToPlay, navigate]);
+
+  if (!sawHowToPlay) {
+    return null;
+  }
 
   return (
     <Box style={{ backgroundImage: `url(${BackgroundImage})` }}>
@@ -64,14 +99,28 @@ function Website() {
         <title>Recitle</title>
       </Helmet>
       <Header>
-        <Navigation alignItems="center">
-          <LogoStyled link="/" />
-          <LinkStyled to="/archive" $isActive={location.pathname === "/archive"}>
-            Archive
-          </LinkStyled>
-          <LinkStyled to="/help" $isActive={location.pathname === "/help"}>
-            How to play
-          </LinkStyled>
+        <Navigation alignItems="center" gap={8}>
+          {isSmallScreen ? (
+            <>
+              <LinkStyled to="/archive" $isActive={location.pathname === "/archive"}>
+                <Icon name="inventory_2" size={20} />
+              </LinkStyled>
+              <LogoStyled link="/" />
+              <LinkStyled to="/help" $isActive={location.pathname === "/help"}>
+                <Icon name="help" size={20} />
+              </LinkStyled>
+            </>
+          ) : (
+            <>
+              <LogoStyled link="/" />
+              <LinkStyled to="/archive" $isActive={location.pathname === "/archive"}>
+                Archive
+              </LinkStyled>
+              <LinkStyled to="/help" $isActive={location.pathname === "/help"}>
+                How to play
+              </LinkStyled>
+            </>
+          )}
         </Navigation>
       </Header>
       <Outlet />

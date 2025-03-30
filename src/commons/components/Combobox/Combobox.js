@@ -19,13 +19,21 @@ function Combobox({ className, label, placeholder, value, onChange, options = []
     return options.filter(el => caseInsensitiveCompare(el.label, searchPhrase));
   }, [searchPhrase, options]);
 
+  function onSearchPhraseChange(newValue) {
+    setSearchPhrase(newValue);
+
+    if (value) {
+      onChange("");
+    }
+  }
+
   return (
     <Box className={className}>
       <Popover
         trigger={
           <TextInput
             value={selectedItemLabel || searchPhrase}
-            onChange={setSearchPhrase}
+            onChange={onSearchPhraseChange}
             placeholder={placeholder}
             label={label}
             rightIcon="arrow_drop_down"

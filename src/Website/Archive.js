@@ -1,11 +1,15 @@
 import React from "react";
 import T from "prop-types";
-import styled from "styled-components/macro";
+import styled, { css } from "styled-components/macro";
 import Typography from "commons/components/Typography";
 import { songs } from "data/songs.const";
 import callLocalStorage from "commons/util/callLocalStorage";
 import { Link } from "react-router-dom";
 import Squares from "./components/Squares";
+import Icon from "commons/components/Icon";
+import { GAME_STATE } from "./Home";
+import { useMediaQuery } from "commons/util/useMediaQuery";
+import { BREAKPOINTS } from "commons/util/breakpoints";
 
 const Box = styled.div`
   overflow-x: hidden;
@@ -16,34 +20,87 @@ const Container = styled.main`
   width: 680px;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 16px;
 `;
 
 const SongBox = styled(Link)`
+  position: relative; /* Ensure it's a containing block */
   display: flex;
   align-items: center;
   margin-bottom: 12px;
   gap: 16px;
   width: 100%;
   padding: 12px;
-  background-color: var(--neutral-100);
+  background-color: #1e0e1a33;
   border-radius: var(--border-radius-2);
+  border: 2px solid rgba(255, 0, 255, 0.5);
+  backdrop-filter: blur(24px);
 
   &:hover {
-    background-color: var(--neutral-80);
+    background-color: #1e0e1a80;
   }
+
+  /* &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    background-color: red;
+    border-radius: var(--border-radius-2);
+    z-index: -1;
+  } */
+`;
+
+const StatusIcon = styled(Icon)`
+  position: relative;
+  margin-left: auto;
+  color: #00ffff;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100px;
+    position: absolute;
+    top: -14px;
+    bottom: -14px;
+    right: -14px;
+    border-top-right-radius: var(--border-radius-2);
+    border-bottom-right-radius: var(--border-radius-2);
+  }
+
+  ${({ $state }) =>
+    $state === GAME_STATE.WON &&
+    css`
+      color: #00ff00;
+
+      &:after {
+        background: linear-gradient(90deg, #00ff0000 0%, #00ff0033 100%);
+      }
+    `}
+
+  ${({ $state }) =>
+    $state === GAME_STATE.LOST &&
+    css`
+      color: var(--red-100);
+
+      &:after {
+        background: linear-gradient(90deg, #1e0e1a00 0%, #ff000033 100%);
+      }
+    `}
 `;
 
 function Archive({ className }) {
   const songArchive = callLocalStorage("songArchive");
-  console.log(songArchive);
+  const isSmallScreen = useMediaQuery(BREAKPOINTS.small);
 
   return (
     <Box className={className}>
       <Container>
-        <Typography variant="h1">Archive</Typography>
-        <Typography variant="body" marginBottom={24}>
-          This page contains a list of all the previous games.
+        <Typography variant={isSmallScreen ? "h3" : "h1"} marginBottom={24} marginTop={isSmallScreen ? 24 : 0}>
+          Archive
         </Typography>
 
         {songs.map((song, index) => {
@@ -53,8 +110,24 @@ function Archive({ className }) {
           return (
             <SongBox key={index} to={`/?id=${song.id}`}>
               <Typography variant="h4">#{songs.length - index}</Typography>
-              <Typography variant="body">{song.date}</Typography>
-              <Squares maxVerses={maxVerses} steps={archiveItem.steps} state={archiveItem.state} />
+              {!isSmallScreen && <Typography variant="body">{song.date}</Typography>}
+              <Squares
+                maxVerses={maxVerses}
+                steps={archiveItem.steps}
+                state={archiveItem.state}
+                shrink={isSmallScreen}
+              />
+              <StatusIcon
+                name={
+                  !archiveItem.state || archiveItem.state === GAME_STATE.PLAYING
+                    ? "chevron_right"
+                    : archiveItem.state === GAME_STATE.WON
+                    ? "check"
+                    : "close"
+                }
+                size={24}
+                $state={archiveItem.state}
+              />
             </SongBox>
           );
         })}

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components/macro";
-import Page404SVG from "commons/images/404.jpeg";
 import Button from "commons/components/Button";
 import Typography from "commons/components/Typography";
 import { BREAKPOINTS } from "commons/util/breakpoints";
@@ -29,7 +28,7 @@ function Page404() {
   const isScreenMaxMedium = useMediaQuery(BREAKPOINTS.medium);
 
   return (
-    <Box style={{ backgroundImage: `url(${Page404SVG})` }}>
+    <Box>
       <Typography variant={isScreenMaxMedium ? "h3" : "h1"} color="neutral-200" marginBottom={16}>
         Looks like you&apos;re lost
       </Typography>
