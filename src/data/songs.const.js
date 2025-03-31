@@ -1,14 +1,569 @@
 export const songs = [
   {
+    id: "10",
+    number: 10,
+    date: "2025-04-05",
+    title: "Eye of the Tiger",
+    artist: "Survivor",
+    link: "https://www.youtube.com/embed/btPJPFnesV4",
+    style: "Corporate speech",
+    lyricsOriginal: [
+      `Rising up, back on the street
+Did my time, took my chances
+Went the distance, now I'm back on my feet
+Just a man and his will to survive`,
+
+      `So many times it happens too fast
+You trade your passion for glory
+Don't lose your grip on the dreams of the past
+You must fight just to keep them alive`,
+
+      `It's the eye of the tiger
+It's the thrill of the fight
+Rising up to the challenge of our rival
+And the last known survivor
+Stalks his prey in the night
+And he's watching us all with the eye of the tiger`,
+
+      `Face to face, out in the heat
+Hanging tough, staying hungry
+They stack the odds still we take to the street
+For the kill with the skill to survive`,
+
+      `It's the eye of the tiger
+It's the thrill of the fight
+Rising up to the challenge of our rival
+And the last known survivor
+Stalks his prey in the night
+And he's watching us all with the eye of the tiger`,
+
+      `Rising up, straight to the top
+Had the guts, got the glory
+Went the distance, now I'm not gonna stop
+Just a man and his will to survive`,
+
+      `It's the eye of the tiger
+It's the thrill of the fight
+Rising up to the challenge of our rival
+And the last known survivor
+Stalks his prey in the night
+And he's watching us all with the eye of the tiger`,
+
+      `The eye of the tiger
+The eye of the tiger
+The eye of the tiger
+The eye of the tiger`,
+    ],
+    lyricsModified: [
+      `Reengaging, returning to the market
+Completed my tasks, seized the opportunities
+Achieved key milestones, now I’m back on track
+Just an individual and his determination to succeed`,
+
+      `There are moments when things accelerate quickly
+You exchange your passion for success
+Do not lose sight of the long-term goals
+You must maintain focus to keep them in play`,
+
+      `It’s the drive of the achiever
+It’s the excitement of overcoming obstacles
+Rising to meet the challenge of our competitors
+And the final remaining player
+Targets their opportunity in the shadows
+And they are monitoring us all with the drive of the achiever`,
+
+      `Head-to-head, in the competitive arena
+Remaining resilient, staying motivated
+The odds are stacked, yet we continue to push forward
+To execute with the expertise to succeed`,
+
+      `It’s the drive of the achiever
+It’s the excitement of overcoming obstacles
+Rising to meet the challenge of our competitors
+And the final remaining player
+Targets their opportunity in the shadows
+And they are monitoring us all with the drive of the achiever`,
+
+      `Reengaging, climbing to the peak
+Demonstrated courage, earned recognition
+Achieved key milestones, now I will not stop
+Just an individual and his determination to succeed`,
+
+      `It’s the drive of the achiever
+It’s the excitement of overcoming obstacles
+Rising to meet the challenge of our competitors
+And the final remaining player
+Targets their opportunity in the shadows
+And they are monitoring us all with the drive of the achiever`,
+
+      `The drive of the achiever
+The drive of the achiever
+The drive of the achiever
+The drive of the achiever`,
+    ],
+  },
+  {
+    id: "9",
+    number: 9,
+    date: "2025-04-04",
+    title: "Zombie",
+    artist: "The Cranberries",
+    link: "https://www.youtube.com/embed/6Ejga4kJUts",
+    style: "Caveman talk",
+    lyricsOriginal: [
+      `Another head hangs lowly
+Child is slowly taken
+And the violence caused such silence
+Who are we mistaken`,
+
+      `But you see it's not me
+It's not my family
+In your head, in your head
+They are fighting
+With their tanks and their bombs
+And their bombs and their guns
+In your head, in your head
+They are cryin'`,
+
+      `In your head, in your head
+Zombie, zombie, zombie, hey, hey
+What's in your head, in your head
+Zombie, zombie, zombie, hey, hey, hey, oh`,
+
+      `Dou, dou, dou, dou
+Dou, dou, dou, dou
+Dou, dou, dou, dou
+Dou, dou, dou, dou`,
+
+      `Another mother's breakin'
+Heart is taking over
+When the violence causes silence
+We must be mistaken`,
+
+      `It's the same old theme
+Since nineteen-sixteen
+In your head, in your head
+They're still fightin'
+With their tanks and their bombs
+And their bombs and their guns
+In your head, in your head
+They are dyin'`,
+
+      `In your head, in your head
+Zombie, zombie, zombie, hey, hey
+What's in your head, in your head
+Zombie, zombie, zombie, hey, hey, hey
+Oh, oh, oh, oh, oh, oh, oh
+Hey, oh, ya, ya-a`,
+    ],
+    lyricsModified: [
+      `Other head hang low
+Child go slow, taken away
+Big fight make quiet
+Who we fool?`,
+
+      `But you see, not me
+Not my tribe
+In your head, in your head
+Fight, fight, fight
+With big rocks and sticks
+And big sticks and sharp rocks
+In your head, in your head
+They cry, cry, cry`,
+
+      `In your head, in your head
+Beast, beast, beast, hey, hey
+What in your head, in your head
+Beast, beast, beast, hey, hey, hey, oh`,
+
+      `Dou, dou, dou, dou
+Dou, dou, dou, dou
+Dou, dou, dou, dou
+Dou, dou, dou, dou`,
+
+      `Other mother sad
+Heart hurt, takes over
+Big fight make quiet
+We must be wrong`,
+
+      `Same old fight
+Since many moons ago
+In your head, in your head
+They fight, fight, fight
+With big rocks and sticks
+And big sticks and sharp rocks
+In your head, in your head
+They fall, fall, fall`,
+
+      `In your head, in your head
+Beast, beast, beast, hey, hey
+What in your head, in your head
+Beast, beast, beast, hey, hey, hey
+Oh, oh, oh, oh, oh, oh, oh
+Hey, oh, ya, ya-a`,
+    ],
+  },
+  {
+    id: "8",
+    number: 8,
+    date: "2025-04-03",
+    title: "All Star",
+    artist: "Smash Mouth",
+    link: "https://www.youtube.com/embed/L_jWHffIx5E",
+    style: "Star Wars",
+    lyricsOriginal: [
+      `Somebody once told me the world is gonna roll me
+I ain't the sharpest tool in the shed
+She was looking kind of dumb with her finger and her thumb
+In the shape of an "L" on her forehead`,
+
+      `Well, the years start coming and they don't stop coming
+Fed to the rules and I hit the ground running
+Didn't make sense not to live for fun
+Your brain gets smart but your head gets dumb`,
+
+      `So much to do, so much to see
+So what's wrong with taking the back streets?
+You'll never know if you don't go (GO!)
+You'll never shine if you don't glow`,
+
+      `Hey, now, you're an all-star, get your game on, go play
+Hey, now, you're a rock star, get the show on, get paid
+And all that glitters is gold
+Only shooting stars break the mold`,
+
+      `It's a cool place and they say it gets colder
+You're bundled up now wait 'til you get older
+But the meteor man beg to differ
+Judging by the hole in the satellite picture`,
+
+      `The ice we skate is getting pretty thin
+The water's getting warm so you might as well swim
+My world's on fire. How about yours?
+That's the way I like it and I'll never get bored`,
+
+      `Hey, now, you're an all-star, get your game on, go play
+Hey, now, you're a rock star, get the show on, get paid
+And all that glitters is gold
+Only shooting stars break the mold`,
+
+      `Hey, now, you're an all-star, get your game on, go play
+Hey, now, you're a rock star, get the show on, get paid
+And all that glitters is gold
+Only shooting stars`,
+
+      `Somebody once asked could I spare some change for gas
+I need to get myself away from this place
+I said yep, what a concept
+I could use a little fuel myself
+And we could all use a little change`,
+
+      `Well, the years start coming and they don't stop coming
+Fed to the rules and I hit the ground running
+Didn't make sense not to live for fun
+Your brain gets smart but your head gets dumb`,
+
+      `So much to do, so much to see
+So what's wrong with taking the back streets?
+You'll never know if you don't go
+You'll never shine if you don't glow`,
+
+      `Hey, now, you're an all-star, get your game on, go play
+Hey, now, you're a rock star, get the show on, get paid
+And all that glitters is gold
+Only shooting stars break the mold`,
+
+      `And all that glitters is gold
+Only shooting stars break the mold`,
+    ],
+    lyricsModified: [
+      `A wise Jedi once spoke, the galaxy will guide me,
+I’m no Master, I’m still learning the ways of the Force
+She stood with a blaster, a smirk on her face,
+Her hand made an “L” as the rebels’ fate was set`,
+
+      `The years of the Empire come, and they won’t cease,
+Bound by the Code, I draw my saber and fight
+The galaxy’s chaos does not prevent the thrill
+The Force sharpens the mind, but war dulls the soul`,
+
+      `So much to see in this vast, endless space
+What harm is there in flying the hidden routes?
+You’ll never know the path if you don't take it (TAKE IT!)
+You’ll never rise if you don’t let the Force flow`,
+
+      `Now, Jedi, you’re a hero, take your lightsaber and fight
+Now, smuggler, you’re a legend, take the bounty and win
+All that glows is stardust
+Only the brave ever break the Empire’s grip`,
+
+      `The galaxy’s cold, and the dark side’s near
+Strap in now, young one, the danger grows clear
+But the droid says differently
+Look at the star map, there’s hope to be found`,
+
+      `The ice beneath us cracks with every step
+The darkness encroaches, but we must keep moving
+My heart’s aflame. What of yours?
+I embrace it fully, it will never fade`,
+
+      `Now, Jedi, you’re a hero, take your lightsaber and fight
+Now, smuggler, you’re a legend, take the bounty and win
+All that glows is stardust
+Only the brave ever break the Empire’s grip`,
+
+      `Now, Jedi, you’re a hero, take your lightsaber and fight
+Now, smuggler, you’re a legend, take the bounty and win
+All that glows is stardust
+Only the brave ever shatter the mold`,
+
+      `A traveler once asked, could I spare fuel for the ship
+I must flee from the Empire’s reach
+I said yes, what a mission
+I need fuel for my cause, myself
+And we all crave a little freedom`,
+
+      `The years of the Empire come, and they won’t cease,
+Bound by the Code, I draw my saber and fight
+The galaxy’s chaos does not prevent the thrill
+The Force sharpens the mind, but war dulls the soul`,
+
+      `So much to see in this vast, endless space
+What harm is there in flying the hidden routes?
+You’ll never know the path if you don’t take it
+You’ll never rise if you don’t let the Force flow`,
+
+      `Now, Jedi, you’re a hero, take your lightsaber and fight
+Now, smuggler, you’re a legend, take the bounty and win
+All that glows is stardust
+Only the brave ever break the Empire’s grip`,
+
+      `All that glows is stardust
+Only the brave ever shatter the mold`,
+    ],
+  },
+  {
+    id: "7",
+    number: 7,
+    date: "2025-04-02",
+    title: "Toxic",
+    artist: "Britney Spears",
+    link: "https://www.youtube.com/embed/LOZuxwVk7TU",
+    style: "Tolkien",
+    lyricsOriginal: [
+      `Baby, can't you see I'm calling?
+A guy like you should wear a warning
+It's dangerous, I'm falling
+There's no escape, I can't wait
+I need a hit, baby, give me it
+You're dangerous, I'm loving it`,
+
+      `Too high, can't come down
+Losing my head, spinning 'round and 'round
+Do you feel me now?`,
+
+      `With a taste of your lips, I'm on a ride
+You're toxic, I'm slipping under
+With a taste of a poison paradise
+I'm addicted to you
+Don't you know that you're toxic?
+And I love what you do
+Don't you know that you're toxic?`,
+
+      `It's getting late to give you up
+I took a sip from my devil's cup
+Slowly, it's taking over me`,
+
+      `Too high, can't come down
+It's in the air and it's all around
+Can you feel me now?`,
+
+      `With a taste of your lips, I'm on a ride
+You're toxic, I'm slipping under
+With a taste of a poison paradise
+I'm addicted to you
+Don't you know that you're toxic?
+And I love what you do
+Don't you know that you're toxic?
+Don't you know that you're toxic?`,
+
+      `With a taste of your lips, I'm on a ride
+You're toxic, I'm slipping under
+With a taste of a poison paradise
+I'm addicted to you
+Don't you know that you're toxic?
+With a taste of your lips, I'm on a ride
+You're toxic, I'm slipping under (Toxic)
+With a taste of a poison paradise
+I'm addicted to you
+Don't you know that you're toxic?`,
+
+      `Intoxicate me now with your loving now
+I think I'm ready now (I think I'm ready now)
+Intoxicate me now with your loving now
+I think I'm ready now`,
+    ],
+    lyricsModified: [
+      `Fair maiden, dost thou not hear my cry?
+A knight of thine own stature should bear a sign
+For perilous is this path, and I am fallen,
+No escape awaits, my heart in chains does dwell
+Grant me that which I seek, my love, I beg
+For thou art the peril I long to cherish`,
+
+      `Lo! I rise upon wings, yet cannot descend
+My mind doth whirl, in circles it spins
+Dost thou feel my soul now, as I do thine?`,
+
+      `Upon the taste of thy lips, I ride the storm
+Thy poison, like the deepest, darkest spell,
+A paradise of shadows, I slip below,
+To thee I am bound, my heart enslaved
+Knowest thou not, thy touch is venom sweet?
+I cherish the harm thou bringest unto me`,
+
+      `The hour grows dim to turn from thee
+From the goblet of the dark lord I drank,
+Slowly, it takes hold of me`,
+
+      `Lo! I rise upon wings, yet cannot descend
+The winds of fate blow fierce, all around
+Dost thou feel me, as I feel thee now?`,
+
+      `Upon the taste of thy lips, I ride the storm
+Thy poison, like the deepest, darkest spell,
+A paradise of shadows, I slip below,
+To thee I am bound, my heart enslaved
+Knowest thou not, thy touch is venom sweet?
+I cherish the harm thou bringest unto me`,
+
+      `Upon the taste of thy lips, I ride the storm
+Thy poison, like the deepest, darkest spell,
+A paradise of shadows, I slip below,
+To thee I am bound, my heart enslaved
+Knowest thou not, thy touch is venom sweet?
+I cherish the harm thou bringest unto me`,
+
+      `Entwine me in thy love, intoxicating grace,
+I stand ready, my soul is thine to take
+I am ready now, take me as thine own`,
+    ],
+  },
+  {
     id: "6",
     number: 6,
     date: "2025-04-01",
     title: "Wonderwall",
     artist: "Oasis",
     link: "https://www.youtube.com/embed/bx1Bh8ZvH84",
-    style: "6-year-old",
-    lyricsOriginal: [],
-    lyricsModified: [],
+    style: "Shakespearean Tragedy",
+    lyricsOriginal: [
+      `Today is gonna be the day
+That they're gonna throw it back to you
+By now you should've somehow
+Realized what you gotta do
+I don't believe that anybody
+Feels the way I do about you now`,
+
+      `Backbeat, the word is on the street
+That the fire in your heart is out
+I'm sure you've heard it all before
+But you never really had a doubt
+I don't believe that anybody feels
+The way I do about you now`,
+
+      `And all the roads we have to walk are winding
+And all the lights that lead us there are blinding
+There are many things that I would
+Like to say to you
+But I don't know how`,
+
+      `Because maybe
+You're gonna be the one that saves me
+And after all
+You're my wonderwall`,
+
+      `Today was gonna be the day
+But they'll never throw it back to you
+By now you should've somehow
+Realized what you're not to do
+I don't believe that anybody
+Feels the way I do
+About you now`,
+
+      `And all the roads that lead you there were winding
+And all the lights that light the way are blinding
+There are many things that I would like to say to you
+But I don't know how`,
+
+      `I said maybe
+You're gonna be the one that saves me
+And after all
+You're my wonderwall`,
+
+      `I said maybe (I said maybe)
+You're gonna be the one that saves me
+And after all
+You're my wonderwall`,
+
+      `I said maybe (I said maybe)
+You're gonna be the one that saves me (saves me)
+You're gonna be the one that saves me (saves me)
+You're gonna be the one that saves me (saves me)`,
+    ],
+    lyricsModified: [
+      `Lo! This day shall be the one
+When they shall cast it back unto thee
+By this hour, thou shouldst have surely
+Perceived the task thou art bound to do
+I doubt not that no soul
+Doth feel as I do, in earnest regard for thee`,
+
+      `Hark! The town doth whisper loud upon the street
+That the fire within thy heart hath waned
+Thou hast likely heard such tales afore
+Yet thou hast ne’er truly doubted
+I doubt not that no soul doth feel
+As I do, with fervent passion for thee`,
+
+      `Alas! The roads we must tread are fraught with turns
+And the lights that guide us seem blinding, harsh
+Many things do I long to speak unto thee
+Yet I am lost in my words, unsure how`,
+
+      `Perchance
+Thou art the one who shall deliver me from despair
+And when the storm hath passed
+Thou art mine own beacon of hope`,
+
+      `This day was to be the one
+Yet they shall never cast it back unto thee
+By this hour, thou shouldst have surely
+Realized what thou shouldst not do
+I doubt not that no soul doth feel
+As I do
+With undying devotion to thee`,
+
+      `And the paths that lead thee to thy fate are winding
+And the lights that illuminate thy way doth blind thee
+Many things I yearn to speak to thee
+Yet I am without the means to utter`,
+
+      `I say, perchance
+Thou art the one who shall redeem my soul
+And when all is done
+Thou art mine own salvation`,
+
+      `I say, perchance (I say, perchance)
+Thou art the one who shall redeem my soul
+And when all is done
+Thou art mine own salvation`,
+
+      `I say, perchance (I say, perchance)
+Thou art the one who doth save me (save me)
+Thou art the one who doth save me (save me)
+Thou art the one who doth save me (save me)`,
+    ],
   },
   {
     id: "5",
@@ -347,14 +902,13 @@ Some nights I be wishin’ I’d ne’er been born at all!`,
       `I spy a tiny silhouette o’ a scallywag!  
 Scaramouche, Scaramouche, will ye dance the fandango?  
 Thunder and cannon-fire be strikin’ me timbers!  
-(Galileo) Galileo, (Galileo) Galileo, Galileo Figaro, magnificent rogue!`,
-
-      `But I be but a poor soul, none give a damn fer me!  
+(Galileo) Galileo, (Galileo) Galileo, Galileo Figaro, magnificent rogue!
+But I be but a poor soul, none give a damn fer me!  
 He be but a poor soul from a lowly crew,  
-Spare him this fate, let him be free!  
-Easy come, easy go, will ye let me go?`,
+Spare him this fate, let him be free!`,
 
-      `By Davy Jones’ cursed name,  
+      `Easy come, easy go, will ye let me go?
+By Davy Jones’ cursed name,  
 Nay! We shall not let ye go! (Let him go!)  
 By Davy Jones’ cursed name,  
 We shall not let ye go! (Let him go!)  
@@ -367,21 +921,17 @@ Nay, nay, nay, nay, nay, nay, nay!`,
       `Blimey! Mamma mia, mamma mia!  
 Mamma mia, set me free!  
 Beelzebub’s got a devil markin’ me for the deep,  
-For me! For me! For meeeeee!`,
-
-      `So ye think ye can strike me and spit in me eye?  
+For me! For me! For meeeeee!
+So ye think ye can strike me and spit in me eye?  
 So ye think ye can love me, then leave me to die?  
 Arrr, ye scurvy dog, ye can’t do this to me!  
 I must break free, I must escape this blasted place!`,
 
       `Oooooh,  
-Oooooh, aye! Oooooh, aye!`,
-
-      `Naught be matterin’, any soul can see,  
+Oooooh, aye! Oooooh, aye!
+Naught be matterin’, any soul can see,  
 Naught be matterin’,  
 Naught be matterin’ to meeeee...`,
-
-      `Save the rum!`,
     ],
   },
   {
@@ -481,7 +1031,9 @@ With a little dignity and some wise thinking, capisce?`,
 Nah, it's a damn sight classier to handle this kinda racket
 With a little dignity and some wise thinking, capisce?"`,
 
-      `Once more, I butt in
+      `Once more`,
+
+      `I butt in
 "Ain’t none of you mugs ever heard of shuttin’ the damn door?"
 Nah, it's a damn sight classier to handle this kinda racket
 With a little dignity and some wise thinking, capisce?"`,
@@ -490,6 +1042,8 @@ With a little dignity and some wise thinking, capisce?"`,
 "Ain’t none of you mugs ever heard of shuttin’ the damn door?"
 Nah, it's a damn sight classier to handle this kinda racket
 With a little dignity and some wise thinking, see?"`,
+
+      `Once more`,
     ],
   },
   {
@@ -614,9 +1168,8 @@ No, he can't crack my poker face
 (Encrypted like nobody)`,
 
       `P-p-p-poker face, f-f-fracture data (glitch-glitch-glitch-glow)
-P-p-p-poker face, f-f-fracture data (glitch-glitch-glitch-glow)`,
-
-      `(Glitch-glitch-glitch-glow)
+P-p-p-poker face, f-f-fracture data (glitch-glitch-glitch-glow)
+(Glitch-glitch-glitch-glow)
 (Glitch-glitch-glitch-glow)`,
 
       `I won't drop a tell, no signal, no pulse
@@ -632,9 +1185,8 @@ No, he can't crack my poker face
 (Encrypted like nobody)
 Can't decrypt me, can't decrypt me
 No, he can't crack my poker face
-(Encrypted like nobody)`,
-
-      `Can't decrypt me, can't decrypt me
+(Encrypted like nobody)
+Can't decrypt me, can't decrypt me
 No, he can't crack my poker face
 (Encrypted like nobody)
 Can't decrypt me, can't decrypt me

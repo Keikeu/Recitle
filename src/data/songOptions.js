@@ -1,5 +1,21 @@
 export const songOptions = [
   {
+    id: "10",
+    label: "Eye of the Tiger - Survivor",
+  },
+  {
+    id: "9",
+    label: "Zombie - The Cranberries",
+  },
+  {
+    id: "8",
+    label: "All Star - Smash Mouth",
+  },
+  {
+    id: "7",
+    label: "Toxic - Britney Spears",
+  },
+  {
     id: "6",
     label: "Wonderwall - Oasis",
   },
@@ -160,14 +176,6 @@ export const songOptions = [
     label: "We Are the Champions - Queen",
   },
   {
-    id: "037",
-    label: "Eye of the Tiger - Survivor",
-  },
-  {
-    id: "038",
-    label: "Toxic - Britney Spears",
-  },
-  {
     id: "039",
     label: "Back in Black - AC/DC",
   },
@@ -186,10 +194,6 @@ export const songOptions = [
   {
     id: "043",
     label: "Chasing Cars - Snow Patrol",
-  },
-  {
-    id: "044",
-    label: "All Star - Smash Mouth",
   },
   {
     id: "045",
@@ -346,10 +350,6 @@ export const songOptions = [
   {
     id: "085",
     label: "American Idiot - Green Day",
-  },
-  {
-    id: "086",
-    label: "Zombie - The Cranberries",
   },
   {
     id: "087",

@@ -109,13 +109,13 @@ function Archive({ className }) {
             const itemDate = parseISO(item.date);
             return isBefore(itemDate, new Date()) || isEqual(itemDate, new Date());
           })
-          .map((song, index) => {
+          .map((song, index, array) => {
             const archiveItem = songArchive?.[song.id] || {};
             const maxVerses = song.lyricsOriginal.length;
 
             return (
               <SongBox key={index} to={`/?id=${song.id}`}>
-                <Typography variant="h4">#{songs.length - index}</Typography>
+                <Typography variant="h4">#{array.length - index}</Typography>
                 {!isSmallScreen && <Typography variant="body">{song.date}</Typography>}
                 <Squares
                   maxVerses={maxVerses}
