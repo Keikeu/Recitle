@@ -25,7 +25,7 @@ const Container = styled.main`
 `;
 
 const SongBox = styled(Link)`
-  position: relative; /* Ensure it's a containing block */
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 12px;
@@ -95,7 +95,7 @@ const StatusIcon = styled(Icon)`
 
 function Archive({ className }) {
   const songArchive = callLocalStorage("songArchive");
-  const isSmallScreen = useMediaQuery(BREAKPOINTS.small);
+  const isSmallScreen = useMediaQuery(BREAKPOINTS.medium);
 
   return (
     <Box className={className}>

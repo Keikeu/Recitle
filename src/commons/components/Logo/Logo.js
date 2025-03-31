@@ -18,7 +18,7 @@ const LogoLink = styled(Link)`
     font-size: 40px;
   }
 
-  @media (max-width: ${BREAKPOINTS.small}) {
+  @media (max-width: ${BREAKPOINTS.medium}) {
     font-size: 24px;
 
     &:first-letter {

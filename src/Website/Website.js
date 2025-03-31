@@ -39,7 +39,7 @@ const Navigation = styled(Flexbox)`
   padding: 0 32px;
   width: 100%;
 
-  @media (max-width: ${BREAKPOINTS.small}) {
+  @media (max-width: ${BREAKPOINTS.medium}) {
     padding: 0 12px;
     background-color: #301d44;
   }
@@ -48,7 +48,7 @@ const Navigation = styled(Flexbox)`
 const LogoStyled = styled(Logo)`
   margin-right: auto;
 
-  @media (max-width: ${BREAKPOINTS.small}) {
+  @media (max-width: ${BREAKPOINTS.medium}) {
     margin-left: auto;
   }
 `;
@@ -68,7 +68,7 @@ const LinkStyled = styled(Link)`
       background-color: #68325c99;
     `};
 
-  @media (max-width: ${BREAKPOINTS.small}) {
+  @media (max-width: ${BREAKPOINTS.medium}) {
     padding: 14px;
   }
 `;
@@ -78,7 +78,7 @@ function Website() {
   const navigate = useNavigate();
   const sawHowToPlay = callLocalStorage("sawHowToPlay");
 
-  const isSmallScreen = useMediaQuery(BREAKPOINTS.small);
+  const isMediumScreen = useMediaQuery(BREAKPOINTS.medium);
 
   useEffect(() => {
     if (!sawHowToPlay) {
@@ -100,7 +100,7 @@ function Website() {
       </Helmet>
       <Header>
         <Navigation alignItems="center" gap={8}>
-          {isSmallScreen ? (
+          {isMediumScreen ? (
             <>
               <LinkStyled to="/archive" $isActive={location.pathname === "/archive"}>
                 <Icon name="inventory_2" size={20} />

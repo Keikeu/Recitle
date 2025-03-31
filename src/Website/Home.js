@@ -93,7 +93,7 @@ export const GAME_STATE = {
 };
 
 function Home() {
-  const isSmallScreen = useMediaQuery(BREAKPOINTS.small);
+  const isMediumScreen = useMediaQuery(BREAKPOINTS.medium);
   const [searchParams] = useSearchParams();
   const songId = searchParams.get("id");
 
@@ -188,7 +188,7 @@ function Home() {
       <Container>
         {gameState === GAME_STATE.PLAYING && (
           <GuessSection>
-            {isSmallScreen && (
+            {isMediumScreen && (
               <>
                 <Squares maxVerses={maxVerses} steps={step} state={gameState} />
                 <ComboboxStyled
@@ -200,10 +200,10 @@ function Home() {
               </>
             )}
             <Flexbox gap={12} style={{ width: "100%" }}>
-              <Button variant="tertiary" onClick={handleSkip} fullWidth={isSmallScreen}>
+              <Button variant="tertiary" onClick={handleSkip} fullWidth={isMediumScreen}>
                 Skip
               </Button>
-              {!isSmallScreen && (
+              {!isMediumScreen && (
                 <ComboboxStyled
                   value={guess}
                   onChange={songId => setGuess(songId)}
@@ -211,11 +211,11 @@ function Home() {
                   options={songOptions.sort((a, b) => a.label.localeCompare(b.label))}
                 />
               )}
-              <Button onClick={handleGuess} fullWidth={isSmallScreen}>
+              <Button onClick={handleGuess} fullWidth={isMediumScreen}>
                 Submit
               </Button>
             </Flexbox>
-            {!isSmallScreen && <Squares maxVerses={maxVerses} steps={step} state={gameState} />}
+            {!isMediumScreen && <Squares maxVerses={maxVerses} steps={step} state={gameState} />}
           </GuessSection>
         )}
         {gameState !== GAME_STATE.PLAYING && <EndScreen song={currentSong} state={gameState} steps={step} />}

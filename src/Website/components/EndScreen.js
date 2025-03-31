@@ -28,7 +28,7 @@ const Paragraph = styled(Typography)`
   width: 100%;
   white-space: pre-wrap;
 
-  @media (max-width: ${BREAKPOINTS.small}) {
+  @media (max-width: ${BREAKPOINTS.medium}) {
     padding: 0 24px;
   }
 `;
@@ -48,7 +48,7 @@ const LyricsWrap = styled(Flexbox)`
 
 function EndScreen({ className, song, state, steps }) {
   const { showToast } = useToast();
-  const isSmallScreen = useMediaQuery(BREAKPOINTS.small);
+  const isMediumScreen = useMediaQuery(BREAKPOINTS.medium);
 
   const maxVerses = song.lyricsModified.length;
   const stepsToDisplay = state === GAME_STATE.LOST ? steps : steps - 1;
@@ -76,7 +76,7 @@ ${Array.from({ length: maxVerses })
       {state === GAME_STATE.WON && <ConfettiExplosionStyled />}
       <Box className={className}>
         <Flexbox alignItems="center" flexDirection="column">
-          <Typography variant={isSmallScreen ? "h2" : "h1"} marginBottom={24}>
+          <Typography variant={isMediumScreen ? "h2" : "h1"} marginBottom={24}>
             {state === GAME_STATE.WON ? "Victory!" : "Game over"}
           </Typography>
 
@@ -86,13 +86,13 @@ ${Array.from({ length: maxVerses })
             Share
           </Button>
 
-          <Typography variant={isSmallScreen ? "h4" : "h3"} marginTop={68} marginBottom={24}>
+          <Typography variant={isMediumScreen ? "h4" : "h3"} marginTop={68} marginBottom={24}>
             &quot;{song.title}&quot; by {song.artist}
           </Typography>
 
           <iframe
-            width={isSmallScreen ? "320" : "680"}
-            height={isSmallScreen ? "200" : "400"}
+            width={isMediumScreen ? "320" : "680"}
+            height={isMediumScreen ? "200" : "400"}
             src={song.link}
             title="YouTube video player"
             frameBorder="0"
@@ -103,7 +103,7 @@ ${Array.from({ length: maxVerses })
         </Flexbox>
 
         <LyricsWrap flexDirection="column" gap={40} marginTop={56}>
-          {isSmallScreen ? (
+          {isMediumScreen ? (
             <>
               <Paragraph variant="h4">{song.style} style</Paragraph>
               {song.lyricsOriginal.map((_, index) => (
