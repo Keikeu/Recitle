@@ -13,7 +13,7 @@ import Icon from "commons/components/Icon";
 const Box = styled.div`
   background-size: cover;
   background-attachment: fixed;
-  min-height: 100vh;
+  min-height: 100dvh;
   color: white;
 
   &:before {
@@ -38,6 +38,7 @@ const Navigation = styled(Flexbox)`
   height: 80px;
   padding: 0 32px;
   width: 100%;
+  border-radius: 0;
 
   @media (max-width: ${BREAKPOINTS.medium}) {
     padding: 0 12px;

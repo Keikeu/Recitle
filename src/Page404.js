@@ -7,7 +7,7 @@ import { useMediaQuery } from "commons/util/useMediaQuery";
 
 const Box = styled.div`
   padding: 144px;
-  height: 100vh;
+  height: 100dvh;
   background-position: bottom;
   background-size: cover;
 

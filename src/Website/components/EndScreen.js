@@ -46,6 +46,10 @@ const LyricsWrap = styled(Flexbox)`
   backdrop-filter: blur(16px);
 `;
 
+const CountdownTypography = styled(Typography)`
+  text-align: center;
+`;
+
 function EndScreen({ className, song, state, steps }) {
   const { showToast } = useToast();
   const isMediumScreen = useMediaQuery(BREAKPOINTS.medium);
@@ -136,9 +140,9 @@ ${Array.from({ length: maxVerses })
           )}
         </LyricsWrap>
 
-        <Typography variant="paragraph" marginY={24}>
+        <CountdownTypography variant="paragraph" marginY={24}>
           Next Recitle in: <Countdown date={startOfDay(addDays(new Date(), 1))} daysInHours />
-        </Typography>
+        </CountdownTypography>
       </Box>
     </>
   );

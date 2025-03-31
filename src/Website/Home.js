@@ -60,13 +60,13 @@ const LyricsSection = styled.section`
   width: 100%;
   margin: 0 auto;
   padding: 40px 0;
-  height: calc(100vh - 80px - 144px);
+  height: calc(100dvh - 80px - 144px);
   overflow-y: auto;
 
   @media (max-width: ${BREAKPOINTS.medium}) {
     padding-left: 24px;
     padding-right: 24px;
-    height: calc(100vh - 80px - 176px);
+    height: calc(100dvh - 80px - 176px);
   }
 `;
 
