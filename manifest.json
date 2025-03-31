@@ -1,6 +1,6 @@
 {
   "short_name": "Recitle",
-  "name": "Recitle - daily word game",
+  "name": "Recitle - daily word game where you decode reworded song lyrics to guess the song",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
