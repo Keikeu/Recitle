@@ -16,6 +16,7 @@ function OptionList({ options = [], onChange, selectedOptionId, closePopover }) 
           isActive={option.id === selectedOptionId}
         />
       ))}
+      {options.length === 0 && <OptionListItem label="No matches found" disabled />}
     </>
   );
 }
