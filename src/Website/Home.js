@@ -79,10 +79,12 @@ const LyricsWrap = styled(Flexbox)`
 const Paragraph = styled(motion.p)`
   font-size: 18px;
   line-height: 30px;
-  white-space: pre;
+  white-space: pre-line;
+  width: 800px;
 
   @media (max-width: ${BREAKPOINTS.medium}) {
     white-space: pre-wrap;
+    width: auto;
   }
 `;
 
@@ -186,77 +188,79 @@ function Home() {
   return (
     <Box>
       <Container>
-        {gameState === GAME_STATE.PLAYING && (
-          <GuessSection>
-            {isMediumScreen && (
-              <>
-                <Squares maxVerses={maxVerses} steps={step} state={gameState} />
-                <ComboboxStyled
-                  value={guess}
-                  onChange={songId => setGuess(songId)}
-                  placeholder="Search for a song..."
-                  options={songOptions.sort((a, b) => a.label.localeCompare(b.label))}
-                />
-              </>
-            )}
-            <Flexbox gap={12} style={{ width: "100%" }}>
-              <Button variant="tertiary" onClick={handleSkip} fullWidth={isMediumScreen}>
-                Skip
-              </Button>
-              {!isMediumScreen && (
-                <ComboboxStyled
-                  value={guess}
-                  onChange={songId => setGuess(songId)}
-                  placeholder="Search for a song..."
-                  options={songOptions.sort((a, b) => a.label.localeCompare(b.label))}
-                />
-              )}
-              <Button onClick={handleGuess} fullWidth={isMediumScreen}>
-                Submit
-              </Button>
-            </Flexbox>
-            {!isMediumScreen && <Squares maxVerses={maxVerses} steps={step} state={gameState} />}
-          </GuessSection>
-        )}
         {gameState !== GAME_STATE.PLAYING && <EndScreen song={currentSong} state={gameState} steps={step} />}
         {gameState === GAME_STATE.PLAYING && (
-          <LyricsSection>
-            <LyricsWrap flexDirection="column" gap={24}>
-              <AnimatePresence mode="sync">
-                {lyricsModified.map((verse, verseIndex) => (
-                  <div key={verseIndex} ref={el => (lyricsRefs.current[verseIndex] = el)}>
-                    {verseIndex <= step ? (
-                      <Paragraph
-                        key={verseIndex}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.4 }}
-                      >
-                        {verse}
-                      </Paragraph>
-                    ) : (
-                      <Flexbox
-                        key={verseIndex}
-                        as={motion.div}
-                        flexDirection="column"
-                        gap={12}
-                        paddingY={6}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.4 }}
-                      >
-                        {verse.split(/\n/).map((line, lineIndex) => (
-                          <Skeleton key={lineIndex} width={`${line.length * 7}px`} height="18px" />
-                        ))}
-                      </Flexbox>
-                    )}
-                  </div>
-                ))}
-              </AnimatePresence>
-            </LyricsWrap>
-          </LyricsSection>
+          <>
+            <GuessSection>
+              {isMediumScreen && (
+                <>
+                  <Squares maxVerses={maxVerses} steps={step} state={gameState} />
+                  <ComboboxStyled
+                    value={guess}
+                    onChange={songId => setGuess(songId)}
+                    placeholder="Search for a song..."
+                    options={songOptions.sort((a, b) => a.label.localeCompare(b.label))}
+                  />
+                </>
+              )}
+              <Flexbox gap={12} style={{ width: "100%" }}>
+                <Button variant="tertiary" onClick={handleSkip} fullWidth={isMediumScreen}>
+                  Skip
+                </Button>
+                {!isMediumScreen && (
+                  <ComboboxStyled
+                    value={guess}
+                    onChange={songId => setGuess(songId)}
+                    placeholder="Search for a song..."
+                    options={songOptions.sort((a, b) => a.label.localeCompare(b.label))}
+                    popoverPlacement={isMediumScreen ? "top-end" : "bottom-end"}
+                  />
+                )}
+                <Button onClick={handleGuess} fullWidth={isMediumScreen}>
+                  Submit
+                </Button>
+              </Flexbox>
+              {!isMediumScreen && <Squares maxVerses={maxVerses} steps={step} state={gameState} />}
+            </GuessSection>
+
+            <LyricsSection>
+              <LyricsWrap flexDirection="column" gap={24}>
+                <AnimatePresence mode="sync">
+                  {lyricsModified.map((verse, verseIndex) => (
+                    <div key={verseIndex} ref={el => (lyricsRefs.current[verseIndex] = el)}>
+                      {verseIndex <= step ? (
+                        <Paragraph
+                          key={verseIndex}
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          transition={{ duration: 0.4 }}
+                        >
+                          {verse}
+                        </Paragraph>
+                      ) : (
+                        <Flexbox
+                          key={verseIndex}
+                          as={motion.div}
+                          flexDirection="column"
+                          gap={12}
+                          paddingY={6}
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          transition={{ duration: 0.4 }}
+                        >
+                          {verse.split(/\n/).map((line, lineIndex) => (
+                            <Skeleton key={lineIndex} width={`${line.length * 7}px`} height="18px" />
+                          ))}
+                        </Flexbox>
+                      )}
+                    </div>
+                  ))}
+                </AnimatePresence>
+              </LyricsWrap>
+            </LyricsSection>
+          </>
         )}
       </Container>
     </Box>
