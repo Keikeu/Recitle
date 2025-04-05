@@ -119,7 +119,7 @@ function Archive({ className }) {
                 {!isSmallScreen && <Typography variant="body">{song.date}</Typography>}
                 <Squares
                   maxVerses={maxVerses}
-                  steps={archiveItem.steps}
+                  steps={archiveItem.state === GAME_STATE.LOST ? archiveItem.steps : archiveItem.steps - 1}
                   state={archiveItem.state}
                   shrink={isSmallScreen}
                 />
