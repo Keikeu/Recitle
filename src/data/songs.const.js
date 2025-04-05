@@ -1,5 +1,300 @@
 export const songs = [
   {
+    id: "12",
+    number: 12,
+    date: "2025-04-07",
+    title: "Somebody That I Used to Know",
+    artist: "Gotye",
+    link: "https://www.youtube.com/embed/8UVNT4wvIGY",
+    style: "Self help book",
+    lyricsOriginal: [
+      `Now and then I think of when we were together
+Like when you said you felt so happy you could die
+Told myself that you were right for me
+But felt so lonely in your company
+But that was love and it's an ache I still remember`,
+
+      `You can get addicted to a certain kind of sadness
+Like resignation to the end, always the end
+So when we found that we could not make sense
+Well you said that we would still be friends
+But I'll admit that I was glad that it was over`,
+
+      `But you didn't have to cut me off
+Make out like it never happened and that we were nothing
+And I don't even need your love
+But you treat me like a stranger and that feels so rough
+No you didn't have to stoop so low
+Have your friends collect your records and then change your number
+I guess that I don't need that though
+Now you're just somebody that I used to know`,
+
+      `Now you're just somebody that I used to know
+Now you're just somebody that I used to know`,
+
+      `Now and then I think of all the times you screwed me over
+But had me believing it was always something that I'd done
+But I don't wanna live that way
+Reading into every word you say
+You said that you could let it go
+And I wouldn't catch you hung up on somebody that you used to know`,
+
+      `But you didn't have to cut me off
+Make out like it never happened and that we were nothing
+And I don't even need your love
+But you treat me like a stranger and that feels so rough
+No you didn't have to stoop so low
+Have your friends collect your records and then change your number
+I guess that I don't need that though
+Now you're just somebody that I used to know`,
+
+      `Somebody
+(I used to know)
+Somebody
+(Now you're just somebody that I used to know)`,
+
+      `Somebody
+(I used to know)
+Somebody
+(Now you're just somebody that I used to know)`,
+
+      `(I used to know)
+(That I used to know)
+(I used to know)
+Somebody`,
+    ],
+    lyricsModified: [
+      `Occasionally, we reflect on the relationships that once brought us joy and connection
+We recall moments where we felt so alive, so fulfilled, that it seemed like everything was perfect
+But in hindsight, it’s clear that the emotional connection didn’t fully meet our needs
+We were made to believe we were aligned, but in reality, we were left feeling isolated in the very company we thought would bring us comfort
+Yet, we learned, and the pain still serves as a reminder of what it means to truly grow`,
+
+      `We often find ourselves attached to the familiar feeling of sadness, as though it has become a part of us
+We resign ourselves to the belief that it’s just the way things are—always an ending, never a beginning
+But as we reach the point of realization, we understand that sometimes endings offer us clarity
+We tell ourselves we will remain friends, but deep down, we recognize the freedom that comes when we let go`,
+
+      `There is no need to carry the weight of unnecessary emotional baggage
+You didn't need to dismiss me or pretend that our experiences never mattered
+Our connection was important, but I no longer need your validation
+I refuse to allow your actions to dictate how I feel
+You treated me as though I were irrelevant, a stranger—and this behavior only reinforces the necessity of moving on
+You've chosen to remove yourself, and that's okay; now, you are simply a chapter I once lived`,
+
+      `And now, you exist as a distant memory—someone I once knew`,
+
+      `From time to time, I reflect on the way past betrayals were framed as my fault
+I accepted the blame, not realizing that it wasn't entirely mine to carry
+I don’t want to live in a state of constant self-doubt, analyzing every word and action, trying to piece together what went wrong
+You promised me closure, but the fact that you're still hanging onto what we had shows that there’s still work left to do on both sides`,
+
+      `It's important to remember that there is no need to allow someone to take away your peace of mind by dismissing you entirely
+You don’t have to let their actions define your self-worth
+Even when it feels like they’ve erased your existence, it's crucial to remind yourself that you can stand on your own
+The changes they made are just signs of their own unresolved issues, not a reflection of who you are
+And now, you've become a past version of someone I once knew`,
+
+      `Someone  
+(I used to know)  
+Someone  
+(Now you're just somebody that I used to know)`,
+
+      `Somebody  
+(I used to know)  
+Somebody  
+(Now you're just somebody that I used to know)`,
+
+      `(I used to know)  
+(That I used to know)  
+(I used to know)  
+Somebody`,
+    ],
+  },
+  {
+    id: "11",
+    number: 11,
+    date: "2025-04-06",
+    title: "Lose Yourself",
+    artist: "Eminem",
+    link: "https://www.youtube.com/embed/xFYQQPAOz7Y",
+    style: "Scientific Jargon",
+    lyricsOriginal: [
+      `Look, if you had one shot, or one opportunity
+To seize everything you ever wanted, in one moment
+Would you capture it, or just let it slip?`,
+
+      `Yo! His palms are sweaty, knees weak, arms are heavy
+There's vomit on his sweater already: Mom's spaghetti
+He's nervous, but on the surface he looks calm and ready
+To drop bombs, but he keeps on forgetting
+What he wrote down, the whole crowd goes so loud
+He opens his mouth, but the words won't come out
+He's choking, how? Everybody's joking now
+The clock's run out, time's up, over, blaow!
+Snap back to reality, ope there goes gravity, ope
+There goes Rabbit, he choked, he's so mad but he won't
+Give up that easy, no, he won't have it, he knows
+His whole back's to these ropes, it don't matter, he's dope
+He knows that but he's broke, he's so stagnant, he knows
+When he goes back to this mobile home, that's when it's
+Back to the lab again yo, this whole rhapsody
+Better go capture this moment and hope it don't pass him, and`,
+
+      `You better lose yourself in the music
+The moment, you own it, you better never let it go
+You only get one shot, do not miss your chance to blow
+This opportunity comes once in a lifetime, yo
+You better lose yourself in the music
+The moment, you own it, you better never let it go
+You only get one shot, do not miss your chance to blow
+This opportunity comes once in a lifetime, yo
+You better…`,
+
+      `His soul's escaping through this hole that is gaping
+This world is mine for the taking, make me king
+As we move toward a New World Order
+A normal life is boring; but superstardom's
+Close to post-mortem, it only grows harder
+Homie grows hotter, he blows, it's all over
+These hoes is all on him, coast-to-coast shows
+He's known as the Globetrotter, lonely roads
+God only knows, he's grown farther from home, he's no father
+He goes home and barely knows his own daughter
+But hold your nose, 'cause here goes the cold water
+These hoes don't want him no mo', he's cold product
+They moved on to the next schmoe who flows
+He nose-dove and sold nada, and so the soap opera
+Is told, it unfolds, I suppose it's old, partner
+But the beat goes on: da da dum da dum da da da da`,
+
+      `You better lose yourself in the music
+The moment, you own it, you better never let it go
+You only get one shot, do not miss your chance to blow
+This opportunity comes once in a lifetime, yo
+You better lose yourself in the music
+The moment, you own it, you better never let it go
+You only get one shot, do not miss your chance to blow
+This opportunity comes once in a lifetime, yo
+You better…`,
+
+      `No more games, I'ma change what you call rage
+Tear this motherfuckin' roof off like two dogs caged
+I was playin' in the beginning, the mood all changed
+I've been chewed up and spit out and booed off stage
+But I kept rhymin' and stepped right in the next cypher
+Best believe somebody's payin' the Pied Piper
+All the pain inside amplified by the
+Fact that I can't get by with my 9-to-5
+And I can't provide the right type of life for my family
+'Cause man, these goddamn food stamps don't buy diapers
+And there's no movie, there's no Mekhi Phifer, this is my life
+And these times are so hard, and it's gettin' even harder
+Tryna feed and water my seed, plus teeter-totter
+Caught up between bein' a father and a prima donna
+Baby mama drama, screamin' on her, too much for me to wanna
+Stay in one spot, another day of monotony's
+Gotten me to the point I'm like a snail, I've got
+To formulate a plot or end up in jail or shot
+Success is my only motherfuckin' option, failure's not
+Mom, I love you, but this trailer's got
+To go; I cannot grow old in Salem's Lot
+So here I go, it's my shot: feet, fail me not
+This may be the only opportunity that I got`,
+
+      `You better lose yourself in the music
+The moment, you own it, you better never let it go (go)
+You only get one shot, do not miss your chance to blow
+This opportunity comes once in a lifetime, yo
+You better lose yourself in the music
+The moment, you own it, you better never let it go (go)
+You only get one shot, do not miss your chance to blow
+This opportunity comes once in a lifetime, yo
+You better…`,
+
+      `You can do anything you set your mind to, man`,
+    ],
+    lyricsModified: [
+      `Observe: a singular temporal junction presents itself—
+A statistically rare convergence of variables,
+Wherein the subject may acquire all desired outcomes.
+Query: does the subject act, or yield to entropy?`,
+
+      `Physiological indicators spike—palmar hyperhidrosis, quadriceps instability, upper limb fatigue.
+Gastrointestinal expulsion noted—maternal nutrient solution compromised.
+Autonomic arousal evident, yet subject maintains superficial composure.
+Prepared to execute kinetic interventions, but episodic memory retrieval fails.
+Auditory input from surrounding observers reaches critical decibel levels.
+Subject initiates speech protocol, but linguistic pathways fail.
+Neurological freeze. Cortical malfunction.
+Chronometric limit reached. Task termination.
+System reboots—gravity reasserts itself.
+Subject fails, experiences acute frustration, yet behavioral persistence remains.
+Homeostasis disrupted. Economic resources low. Momentum minimal.
+Subject regresses to mobile habitation, initiating cognitive re-evaluation.
+Experimental iteration re-engaged—current moment deemed of paramount importance.`,
+
+      `Subject must engage in immersive auditory flow state.
+Cognitive ownership of present temporal window is critical—do not relinquish.
+Singular opportunity for high-impact output must not be neglected.
+Such events are low-frequency on the probability curve.
+Re-engage auditory immersion.
+Retain cognitive dominance of the active timeline.
+Statistical opportunity ≈ once per lifetime.
+Recalibrate and commit.`,
+
+      `Subject experiences psycho-emotional discharge via cranial aperture.
+Environmental system perceived as exploitable—subject assumes dominant agency.
+Macro-sociopolitical shift underway (cf. New World Order).
+Standard lifestyle parameters rendered inadequate—stimulus threshold too low.
+Fame trajectory increases logarithmically.
+Subject reaches thermal and social saturation.
+Reproductive-oriented individuals demonstrate attraction across geographic nodes.
+However, familial relationships suffer systemic degradation.
+Olfactory receptor engagement advised—emotional coolant deployed.
+Public interest declines; novelty decays exponentially.
+Replacement agents inserted into narrative.
+Subject's trajectory falters—data output nullifies.
+Socio-emotional narrative continues—loop resumes.
+Auditory sequence persists: da-da-dum.`,
+
+      `Reiteration: optimize neural entrainment to music-induced cognitive flow.
+Temporal possession imperative—retain control.
+Missed opportunity yields irreversible loss.
+Event frequency statistically negligible.
+Engage. Synchronize. Dominate.`,
+
+      `Simulation terminated—parameters shifting.
+Behavioral protocol updated: redefine frustration management algorithm.
+Symbolic structural detonation mimicked (cf. "roof off").
+Initial engagement was exploratory—affect now destabilized.
+Subject experienced systemic rejection and memetic suppression.
+Continued lexicon deployment into novel discursive units.
+Probabilistic compensation assumed (cf. Pied Piper model).
+Internalized psychological tension escalated by socioeconomic deprivation.
+Caregiver role compromised by insufficient fiscal resources.
+Government-issued sustenance inadequate for offspring maintenance.
+Narrative authenticity emphasized—cinematic parallels disavowed.
+Environmental conditions increasingly adverse.
+Parental responsibilities vs. personal identity conflict arises.
+Interpersonal instability causes neurocognitive overload.
+Geospatial relocation imminent—avoid existential plateau.
+Execute high-stakes opportunity engagement—motor coordination essential.
+Potentially final strategic window.`,
+
+      `One final reminder:
+Engage neuro-muscular synchronization with auditory stimulus.
+Temporal ownership remains non-negotiable.
+Probabilistic model allows only one iteration.
+This is the inflection point.
+Engage.`,
+
+      `Conclusion:
+Neuroplasticity enables realization of statistically improbable goals—
+Pending the subject’s full cognitive investment.`,
+    ],
+  },
+  {
     id: "10",
     number: 10,
     date: "2025-04-05",

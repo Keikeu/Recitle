@@ -1,5 +1,13 @@
 export const songOptions = [
   {
+    id: "12",
+    label: "Somebody That I Used to Know - Gotye",
+  },
+  {
+    id: "11",
+    label: "Lose Yourself - Eminem",
+  },
+  {
     id: "10",
     label: "Eye of the Tiger - Survivor",
   },
@@ -133,7 +141,7 @@ export const songOptions = [
   },
   {
     id: "026",
-    label: "Lose Yourself - Eminem",
+    label: "Riptide - Vance Joy",
   },
   {
     id: "027",
@@ -252,10 +260,6 @@ export const songOptions = [
     label: "Royals - Lorde",
   },
   {
-    id: "060",
-    label: "Somebody That I Used to Know - Gotye",
-  },
-  {
     id: "061",
     label: "Shape of My Heart - Backstreet Boys",
   },
@@ -362,9 +366,5 @@ export const songOptions = [
   {
     id: "089",
     label: "Don't Let Me Down - The Chainsmokers",
-  },
-  {
-    id: "090",
-    label: "Riptide - Vance Joy",
   },
 ];
