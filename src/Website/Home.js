@@ -12,15 +12,12 @@ import { useSearchParams } from "react-router-dom";
 import EndScreen from "./components/EndScreen";
 import Squares from "./components/Squares";
 import { useMediaQuery } from "commons/util/useMediaQuery";
-import { format } from "date-fns";
+import { format, isAfter } from "date-fns";
 import { AnimatePresence, motion } from "framer-motion";
+import Typography from "commons/components/Typography";
 
 const Box = styled.div`
   position: relative;
-
-  @media (max-width: ${BREAKPOINTS.medium}) {
-    background-image: none;
-  }
 `;
 
 const Container = styled.main`
@@ -66,7 +63,7 @@ const LyricsSection = styled.section`
   @media (max-width: ${BREAKPOINTS.medium}) {
     padding-left: 24px;
     padding-right: 24px;
-    height: calc(100dvh - 80px - 176px);
+    height: calc(100dvh - 80px - 180px);
   }
 `;
 
@@ -104,7 +101,21 @@ function Home() {
   const currentSong = songId
     ? songs.find(song => song.id === songId)
     : songs.find(song => song.date === format(new Date(), "yyyy-MM-dd"));
-  const { id, lyricsModified } = currentSong;
+
+  if (!currentSong) {
+    return (
+      <Box>
+        <Container>
+          <Typography variant="paragraph" margin={32}>
+            No song found for today.
+          </Typography>
+        </Container>
+      </Box>
+    );
+  }
+
+  const { id, lyricsModified, date } = currentSong;
+
   const maxVerses = lyricsModified.length;
   const wasPlayed = songArchive && songArchive[id];
 
@@ -183,6 +194,18 @@ function Home() {
 
   if (loading) {
     return null;
+  }
+
+  if (isAfter(new Date(date), new Date())) {
+    return (
+      <Box>
+        <Container>
+          <Typography variant="paragraph" margin={32}>
+            This song is not available yet.
+          </Typography>
+        </Container>
+      </Box>
+    );
   }
 
   return (
