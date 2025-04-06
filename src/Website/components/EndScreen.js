@@ -65,7 +65,9 @@ ${Array.from({ length: maxVerses })
   .map((_, index) => {
     return index < stepsToDisplay ? "🟥" : index === stepsToDisplay && state === GAME_STATE.WON ? "🟩" : "⬜";
   })
-  .join("")}`
+  .join("")}
+	
+https://karolina.place/Recitle?id=${song.id}`
       )
       .then(() => {
         showToast("Copied to clipboard");
