@@ -6,7 +6,7 @@ export const songs = [
     title: "Somebody That I Used to Know",
     artist: "Gotye",
     link: "https://www.youtube.com/embed/8UVNT4wvIGY",
-    style: "Self help book",
+    style: "Self Help Book",
     lyricsOriginal: [
       `Now and then I think of when we were together
 Like when you said you felt so happy you could die
@@ -96,19 +96,19 @@ The changes they made are just signs of their own unresolved issues, not a refle
 And now, you've become a past version of someone I once knew`,
 
       `Someone  
-(I used to know)  
+(once held space in my life)  
 Someone  
-(Now you're just somebody that I used to know)`,
+(who now exists only in memory—no longer part of who I am becoming)`,
 
-      `Somebody  
-(I used to know)  
+      `Someone  
+(once held space in my life)  
 Somebody  
-(Now you're just somebody that I used to know)`,
+(who now exists only in memory—no longer part of who I am becoming)`,
 
-      `(I used to know)  
-(That I used to know)  
-(I used to know)  
-Somebody`,
+      `(once held space in my life)  
+(who once held space in my life)  
+(once held space in my life)  
+Someone`,
     ],
   },
   {
@@ -216,7 +216,6 @@ You better…`,
     ],
     lyricsModified: [
       `Observe: a singular temporal junction presents itself—
-A statistically rare convergence of variables,
 Wherein the subject may acquire all desired outcomes.
 Query: does the subject act, or yield to entropy?`,
 
@@ -289,9 +288,7 @@ Probabilistic model allows only one iteration.
 This is the inflection point.
 Engage.`,
 
-      `Conclusion:
-Neuroplasticity enables realization of statistically improbable goals—
-Pending the subject’s full cognitive investment.`,
+      `Conclusion: neuroplasticity enables realization of statistically improbable goals.`,
     ],
   },
   {
@@ -301,7 +298,7 @@ Pending the subject’s full cognitive investment.`,
     title: "Eye of the Tiger",
     artist: "Survivor",
     link: "https://www.youtube.com/embed/btPJPFnesV4",
-    style: "Corporate speech",
+    style: "Corporate Speech",
     lyricsOriginal: [
       `Rising up, back on the street
 Did my time, took my chances
@@ -404,7 +401,7 @@ The drive of the achiever`,
     title: "Zombie",
     artist: "The Cranberries",
     link: "https://www.youtube.com/embed/6Ejga4kJUts",
-    style: "Caveman talk",
+    style: "Caveman Talk",
     lyricsOriginal: [
       `Another head hangs lowly
 Child is slowly taken
@@ -575,7 +572,7 @@ Only shooting stars break the mold`,
       `A wise Jedi once spoke, the galaxy will guide me,
 I’m no Master, I’m still learning the ways of the Force
 She stood with a blaster, a smirk on her face,
-Her hand made an “L” as the rebels’ fate was set`,
+Her hand marked her brow as the rebels’ fate was set`,
 
       `The years of the Empire come, and they won’t cease,
 Bound by the Code, I draw my saber and fight
@@ -947,9 +944,9 @@ I'm the bad type,
 Make-your-mom-cry type,
 Make-your-girlfriend-mad type,
 Might-steal-your-dad type.
-I'm the bad guy, duh.`,
+I'm the certified villain, duh.`,
 
-      `Yeah, I'm that bad guy.`,
+      `Yeah, I'm that certified villain.`,
 
       `I like when you act in charge,
 Even though we both know you don't.
@@ -968,9 +965,9 @@ I'm the bad type,
 Make-your-mom-cry type,
 Make-your-girlfriend-mad type,
 Might-steal-your-dad type.
-I'm the bad guy, duh.`,
+I'm the certified villain, duh.`,
 
-      `Yeah, I’m still the bad guy.`,
+      `Yeah, I’m still the certified villain.`,
 
       `I'm good at being bad, that's my whole vibe.
 Bad? Yep, it's what I do best, no cap.`,
@@ -980,10 +977,10 @@ Guess I'm low-key happy that you're solo.
 She said she's scared of me? LMAO, why tho?
 I don’t see it, but maybe it’s 'cause I rock your cologne.`,
 
-      `Yeah, I’m the bad guy.
+      `Yeah, I’m the certified villain.
 You know it, I know it, we all know it.
-Bad guy, menace, chaos is my game.
-I'm the bad guy.`,
+Certified villain, menace, chaos is my game.
+I'm the certified villain.`,
     ],
   },
   {
@@ -1236,7 +1233,7 @@ Naught be matterin’ to meeeee...`,
     title: "I write sins not tragedies",
     artist: "Panic! At The Disco",
     link: "https://www.youtube.com/embed/vc6vs-l5dkc",
-    style: "Old-timey gangster",
+    style: "Old-timey Gangster",
     lyricsOriginal: [
       `Oh, well imagine
 As I'm pacing the pews in a church corridor
@@ -1434,14 +1431,14 @@ Oh-oh-oh-oh-oh-oh
 Burn his firewalls, show him my source`,
 
       `Can't decrypt me, can't decrypt me
-No, he can't crack my poker face
+No, he can't crack my steel mask
 (Encrypted like nobody)
 Can't decrypt me, can't decrypt me
-No, he can't crack my poker face
+No, he can't crack my steel mask
 (Encrypted like nobody)`,
 
-      `P-p-p-poker face, f-f-fracture data (glitch-glitch-glitch-glow)
-P-p-p-poker face, f-f-fracture data (glitch-glitch-glitch-glow)`,
+      `S-s-s-steel mask, f-f-fracture data (glitch-glitch-glitch-glow)
+S-s-s-steel mask, f-f-fracture data (glitch-glitch-glitch-glow)`,
 
       `I wanna ride the betstream, stack the odds, let it roll (yeah)
 A little risk feels right when I'm in control (I see it, woo)
@@ -1456,14 +1453,14 @@ Oh-oh-oh-oh-oh-oh
 Burn his firewalls, show him my source`,
 
       `Can't decrypt me, can't decrypt me
-No, he can't crack my poker face
+No, he can't crack my steel mask
 (Encrypted like nobody)
 Can't decrypt me, can't decrypt me
-No, he can't crack my poker face
+No, he can't crack my steel mask
 (Encrypted like nobody)`,
 
-      `P-p-p-poker face, f-f-fracture data (glitch-glitch-glitch-glow)
-P-p-p-poker face, f-f-fracture data (glitch-glitch-glitch-glow)
+      `S-s-s-steel mask, f-f-fracture data (glitch-glitch-glitch-glow)
+S-s-s-steel mask, f-f-fracture data (glitch-glitch-glitch-glow)
 (Glitch-glitch-glitch-glow)
 (Glitch-glitch-glitch-glow)`,
 
@@ -1476,24 +1473,24 @@ I promise this, promise this
 Check the screen ‘cause I'm dangerous`,
 
       `Can't decrypt me, can't decrypt me
-No, he can't crack my poker face
+No, he can't crack my steel mask
 (Encrypted like nobody)
 Can't decrypt me, can't decrypt me
-No, he can't crack my poker face
+No, he can't crack my steel mask
 (Encrypted like nobody)
 Can't decrypt me, can't decrypt me
-No, he can't crack my poker face
+No, he can't crack my steel mask
 (Encrypted like nobody)
 Can't decrypt me, can't decrypt me
-No, he can't crack my poker face
+No, he can't crack my steel mask
 (Encrypted like nobody)`,
 
-      `P-p-p-poker face, p-p-poker face
-P-p-p-poker face, f-f-fracture data (encrypted like nobody)
-P-p-p-poker face, f-f-fracture data (glitch-glitch-glitch-glow)
-P-p-p-poker face, f-f-fracture data (glitch-glitch-glitch-glow)
-P-p-p-poker face, f-f-fracture data (glitch-glitch-glitch-glow)
-P-p-p-poker face, f-f-fracture data (glitch-glitch-glitch-glow)`,
+      `S-s-s-steel mask, p-p-steel mask
+S-s-s-steel mask, f-f-fracture data (encrypted like nobody)
+S-s-s-steel mask, f-f-fracture data (glitch-glitch-glitch-glow)
+S-s-s-steel mask, f-f-fracture data (glitch-glitch-glitch-glow)
+S-s-s-steel mask, f-f-fracture data (glitch-glitch-glitch-glow)
+S-s-s-steel mask, f-f-fracture data (glitch-glitch-glitch-glow)`,
     ],
   },
 ];
