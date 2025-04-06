@@ -4,7 +4,15 @@ import styled, { css } from "styled-components/macro";
 import Flexbox from "commons/components/Flexbox";
 import { GAME_STATE } from "Website/Home";
 import { BREAKPOINTS } from "commons/util/breakpoints";
-import { useMediaQuery } from "commons/util/useMediaQuery";
+
+const Box = styled(Flexbox)`
+  gap: 8px;
+  flex-wrap: wrap;
+
+  @media (max-width: ${BREAKPOINTS.medium}) {
+    gap: 4px;
+  }
+`;
 
 const Square = styled.div`
   width: 24px;
@@ -38,15 +46,15 @@ const Square = styled.div`
       background-color: #f4edf3cc;
     `}
 
-  ${({ $shrink }) =>
-    $shrink &&
-    css`
-      width: 16px;
-      height: 16px;
-    `}
+
+  @media (max-width: ${BREAKPOINTS.medium}) {
+    border-radius: 2px;
+    width: 20px;
+    height: 20px;
+  }
 `;
 
-function Squares({ className, maxVerses, steps, state, shrink = false }) {
+function Squares({ className, maxVerses, steps, state }) {
   function getSquareColor(index, steps, state) {
     if (index < steps) {
       return "red";
@@ -61,11 +69,11 @@ function Squares({ className, maxVerses, steps, state, shrink = false }) {
   }
 
   return (
-    <Flexbox className={className} gap={shrink ? 4 : 8}>
+    <Box className={className}>
       {Array.from({ length: maxVerses }).map((_, paragraphIndex) => (
-        <Square key={paragraphIndex} $color={getSquareColor(paragraphIndex, steps, state)} $shrink={shrink} />
+        <Square key={paragraphIndex} $color={getSquareColor(paragraphIndex, steps, state)} $maxVerses={maxVerses} />
       ))}
-    </Flexbox>
+    </Box>
   );
 }
 
@@ -74,7 +82,6 @@ Squares.propTypes = {
   maxVerses: T.number.isRequired,
   steps: T.number,
   state: T.string,
-  shrink: T.bool,
 };
 
 export default Squares;
