@@ -10,7 +10,7 @@ import Icon from "commons/components/Icon";
 import { GAME_STATE } from "./Home";
 import { useMediaQuery } from "commons/util/useMediaQuery";
 import { BREAKPOINTS } from "commons/util/breakpoints";
-import { isBefore, isEqual, isFuture, isPast, parseISO } from "date-fns";
+import { format, isBefore, isEqual, parseISO } from "date-fns";
 
 const Box = styled.div`
   overflow-x: hidden;
@@ -18,7 +18,7 @@ const Box = styled.div`
 `;
 
 const Container = styled.main`
-  width: 680px;
+  width: 720px;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 16px;
@@ -31,7 +31,9 @@ const SongBox = styled(Link)`
   margin-bottom: 12px;
   gap: 16px;
   width: 100%;
+  height: 72px;
   padding: 12px;
+  padding-left: 20px;
   background-color: #1e0e1a33;
   border-radius: var(--border-radius-2);
   border: 2px solid rgba(255, 0, 255, 0.5);
@@ -40,23 +42,19 @@ const SongBox = styled(Link)`
   &:hover {
     background-color: #1e0e1a80;
   }
+`;
 
-  /* &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -1px;
-    bottom: -1px;
-    right: -1px;
-    left: -1px;
-    background-color: red;
-    border-radius: var(--border-radius-2);
-    z-index: -1;
-  } */
+const SongIndex = styled(Typography)`
+  width: 32px;
+  flex-shrink: 0;
+`;
+
+const SongDate = styled(Typography)`
+  width: 100px;
+  flex-shrink: 0;
 `;
 
 const StatusIcon = styled(Icon)`
-  position: relative;
   margin-left: auto;
   color: #ff00ff;
 
@@ -65,9 +63,9 @@ const StatusIcon = styled(Icon)`
     display: block;
     width: 100px;
     position: absolute;
-    top: -14px;
-    bottom: -14px;
-    right: -14px;
+    top: -2px;
+    bottom: -2px;
+    right: -2px;
     border-top-right-radius: var(--border-radius-2);
     border-bottom-right-radius: var(--border-radius-2);
   }
@@ -112,16 +110,14 @@ function Archive({ className }) {
           .map((song, index, array) => {
             const archiveItem = songArchive?.[song.id] || {};
             const maxVerses = song.lyricsOriginal.length;
-
             return (
               <SongBox key={index} to={`/?id=${song.id}`}>
-                <Typography variant="h4">#{array.length - index}</Typography>
-                {!isSmallScreen && <Typography variant="body">{song.date}</Typography>}
+                <SongIndex variant="h4">#{array.length - index}</SongIndex>
+                {!isSmallScreen && <SongDate variant="body">{format(new Date(song.date), "PP")}</SongDate>}
                 <Squares
                   maxVerses={maxVerses}
                   steps={archiveItem.state === GAME_STATE.LOST ? archiveItem.steps : archiveItem.steps - 1}
                   state={archiveItem.state}
-                  shrink={isSmallScreen}
                 />
                 <StatusIcon
                   name={
