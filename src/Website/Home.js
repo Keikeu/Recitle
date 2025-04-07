@@ -12,7 +12,7 @@ import { useSearchParams } from "react-router-dom";
 import EndScreen from "./components/EndScreen";
 import Squares from "./components/Squares";
 import { useMediaQuery } from "commons/util/useMediaQuery";
-import { format, isAfter } from "date-fns";
+import { format, isAfter, parse } from "date-fns";
 import { AnimatePresence, motion } from "framer-motion";
 import Typography from "commons/components/Typography";
 
@@ -196,7 +196,7 @@ function Home() {
     return null;
   }
 
-  if (isAfter(new Date(date), new Date())) {
+  if (isAfter(parse(date, "yyyy-MM-dd", new Date()), new Date())) {
     return (
       <Box>
         <Container>
