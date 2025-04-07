@@ -1,5 +1,102 @@
 export const songs = [
   {
+    id: "13",
+    number: 13,
+    date: "2025-04-08",
+    title: "Blinding Lights",
+    artist: "The Weeknd",
+    link: "https://www.youtube.com/embed/4NRXx6U8ABQ",
+    style: "Help Center Script",
+    lyricsOriginal: [
+      `I've been tryna call
+I've been on my own for long enough
+Maybe you can show me how to love, maybe
+I'm going through withdrawals
+You don't even have to do too much
+You can turn me on with just a touch, baby`,
+
+      `I look around and
+Sin City's cold and empty (Oh)
+No one's around to judge me (Oh)
+I can't see clearly when you're gone`,
+
+      `I said, ooh, I'm blinded by the lights
+No, I can't sleep until I feel your touch
+I said, ooh, I'm drowning in the night
+Oh, when I'm like this, you're the one I trust
+Hey, hey, hey`,
+
+      `I'm running out of time
+'Cause I can see the sun light up the sky
+So I hit the road in overdrive, baby, oh`,
+
+      `The city's cold and empty (Oh)
+No one's around to judge me (Oh)
+I can't see clearly when you're gone`,
+
+      `I said, ooh, I'm blinded by the lights
+No, I can't sleep until I feel your touch
+I said, ooh, I'm drowning in the night
+Oh, when I'm like this, you're the one I trust`,
+
+      `I'm just calling back to let you know (Back to let you know)
+I could never say it on the phone (Say it on the phone)
+Will never let you go this time (Ooh)`,
+
+      `I said, ooh, I'm blinded by the lights
+No, I can't sleep until I feel your touch
+Hey, hey, hey
+Hey, hey, hey`,
+
+      `I said, ooh, I'm blinded by the lights
+No, I can't sleep until I feel your touch`,
+    ],
+    lyricsModified: [
+      `Well now, I've been tryin' to reach ya,
+Been ridin' solo through these lonesome nights.
+Maybe you could show a fella how to love again, just maybe.
+Feelin’ mighty restless out here on my own,
+But darlin’, you don’t gotta do much—
+Just a gentle touch from you fires me right up.`,
+
+      `Took a look ‘round, and lemme tell ya—
+This ol’ Sin City’s colder than a snake’s belly in a wagon rut (yep).
+Ain’t a soul around to lay judgment (thank the stars).
+But it sure gets hard to see straight when you’re gone, sugar.`,
+
+      `I said, ooh, I’m blinded by them neon lights,
+Can’t close my eyes ‘til I feel your sweet touch.
+I said, ooh, I’m sinkin’ deep into this starless night,
+And when I’m down like this, you’re the only one I’d bet my boots on.
+Yeehaw.`,
+
+      `Time’s tickin’ faster than a jackrabbit on a date,
+‘Cause I see the sunrise paintin’ the sky gold.
+So I hit the dusty trail, ridin’ hard, no lookin’ back, darlin’—no lookin’ back.`,
+
+      `Ain’t no warmth left in this here town (cold as a prairie wind),
+And no one left to care what I do (not a soul).
+My world don’t make much sense without you around, sugar.`,
+
+      `Like I said before, ooh, them lights got me blind as a bat in daylight,
+Can’t catch no wink o’ sleep ‘til I feel your hand in mine.
+Ooh, I’m drownin’ in the dark out here,
+But when I’m feelin’ this lost, you’re my true North Star.`,
+
+      `Just callin’ back to give you the skinny (had to let you know),
+Ain’t the type to speak soft on the line (nah),
+But this time, I ain’t lettin’ you go, no ma’am.`,
+
+      `I said, ooh, them lights still blindin’ me somethin’ fierce,
+Ain’t gonna sleep ‘til I’ve got you by my side.
+Hey, hey, hey...
+Yup, hey, hey, hey...`,
+
+      `I said, ooh, I’m still lost in that light show,
+And darlin’, sleep won’t find me ‘til your touch does.`,
+    ],
+  },
+  {
     id: "12",
     number: 12,
     date: "2025-04-07",

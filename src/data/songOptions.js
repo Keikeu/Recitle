@@ -1,5 +1,9 @@
 export const songOptions = [
   {
+    id: "13",
+    label: "Blinding Lights - The Weeknd",
+  },
+  {
     id: "12",
     label: "Somebody That I Used to Know - Gotye",
   },
@@ -222,10 +226,6 @@ export const songOptions = [
   {
     id: "049",
     label: "Despacito - Luis Fonsi ft. Daddy Yankee",
-  },
-  {
-    id: "050",
-    label: "Blinding Lights - The Weeknd",
   },
   {
     id: "051",
