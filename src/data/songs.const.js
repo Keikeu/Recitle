@@ -1,5 +1,106 @@
 export const songs = [
   {
+    id: "14",
+    number: 14,
+    date: "2025-04-09",
+    title: "Highway to Hell",
+    artist: "AC/DC",
+    link: "https://www.youtube.com/embed/l482T0yNkeo",
+    style: "Drag Queen Sass",
+    lyricsOriginal: [
+      `Living easy, lovin' free
+Season ticket on a one way ride
+Asking nothing, leave me be
+Taking everythin' in my stride
+Don't need reason, don't need rhyme
+Ain't nothing I'd rather do
+Goin' down, party time
+My friends are gonna be there too, yeah`,
+
+      `I'm on the highway to hell
+On the highway to hell
+Highway to hell
+I'm on the highway to hell`,
+
+      `No stop signs, speed limit
+Nobody's gonna slow me down
+Like a wheel, gonna spin it
+Nobody's gonna mess me around
+Hey Satan, payin' my dues
+Playing in a rocking band
+Hey mama, look at me
+I'm on the way to the promised land
+Woo!`,
+
+      `I'm on the highway to hell
+Highway to hell
+I'm on the highway to hell
+Highway to hell`,
+
+      `Don't stop me
+Heh, heh!`,
+
+      `I'm on the highway to hell
+On the highway to hell
+Highway to hell
+I'm on the highway to hell
+(Highway to hell) I'm on the highway to hell
+(Highway to hell) Highway to hell
+(Highway to hell) Highway to hell
+(Highway to hell)`,
+
+      `And I'm going down
+All the way
+I'm on the highway to hell`,
+    ],
+    lyricsModified: [
+      `Feelin’ fierce, cruisin’ free  
+Front row pass on a one-way thrill  
+No questions, just let me be  
+Struttin’ through it all with grace and skill  
+No excuses, no fancy lines  
+Got better things than wasting time  
+Slidin’ down, it’s showtime, hun  
+And baby, all my glam fam's comin' to stun`,
+
+      `I'm rollin' down that glitter lane  
+On that glitter lane  
+Glitter lane  
+I'm rollin' down that glitter lane`,
+
+      `No red lights, full-on blast  
+Ain’t nobody gonna dim this flash  
+Like a wheel, I twirl and slay  
+Ain’t nobody gonna throw shade my way  
+Hey drama, paid my dues  
+Still servin’ looks with my sparkly crew  
+Hey diva, watch me shine  
+I’m risin’ up to that crown so fine  
+Woo!`,
+
+      `I'm rollin' down that glitter lane  
+Glitter lane  
+I'm rollin' down that glitter lane  
+Glitter lane`,
+
+      `Try and stop me  
+Heh, heh!`,
+
+      `I'm rollin' down that glitter lane  
+On that glitter lane  
+Glitter lane  
+I'm rollin' down that glitter lane  
+(Glitter lane) I'm rollin' down that glitter lane  
+(Glitter lane) Glitter lane  
+(Glitter lane) Glitter lane  
+(Glitter lane)`,
+
+      `And I’m glidin’ low  
+All the way  
+I'm rollin' down that glitter lane`,
+    ],
+  },
+  {
     id: "13",
     number: 13,
     date: "2025-04-08",
