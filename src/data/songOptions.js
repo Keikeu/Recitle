@@ -1,5 +1,13 @@
 export const songOptions = [
   {
+    id: "16",
+    label: "Sk8er Boi - Avril Lavigne",
+  },
+  {
+    id: "15",
+    label: "Someone Like You - Adele",
+  },
+  {
     id: "14",
     label: "Highway to Hell - AC/DC",
   },
@@ -170,10 +178,6 @@ export const songOptions = [
   {
     id: "031",
     label: "My Heart Will Go On - Celine Dion",
-  },
-  {
-    id: "032",
-    label: "Someone Like You - Adele",
   },
   {
     id: "033",

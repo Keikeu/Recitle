@@ -1,5 +1,270 @@
 export const songs = [
   {
+    id: "16",
+    number: 16,
+    date: "2025-04-11",
+    title: "Sk8er Boi",
+    artist: "Avril Lavigne",
+    link: "https://www.youtube.com/embed/TIy3n2b7V9k",
+    style: "Biblical",
+    lyricsOriginal: [
+      `He was a boy.
+She was a girl.
+Can I make it anymore obvious?
+He was a punk.
+She did ballet.
+What more can I say?
+He wanted her.
+She'd never tell.
+Secretly she wanted him as well.
+And all of her friends stuck up their nose.
+They had a problem with his baggy clothes.`,
+
+      `He was a skater boy.
+She said, "See ya later, boy."
+He wasn't good enough for her.
+She had a pretty face but her head was up in space.
+She needed to come back down to earth.`,
+
+      `Five years from now, she sits at home feeding the baby.
+She's all alone.
+She turns on TV and guess who she sees?
+Skater boy rockin' up MTV.
+She calls up her friends.
+They already know.
+And they've all got tickets to see his show.
+She tags along,
+Stands in the crowd,
+Looks up at the man that she turned down.`,
+
+      `He was a skater boy.
+She said, "See ya later, boy."
+He wasn't good enough for her.
+Now he's a superstar
+Slammin' on his guitar
+Does your pretty face see what he's worth?`,
+
+      `He was a skater boy.
+She said, "See ya later, boy."
+He wasn't good enough for her.
+Now he's a superstar
+Slammin' on his guitar
+Does your pretty face see what he's worth?`,
+
+      `Sorry, girl, but you missed out.
+Well, tough luck, that boy's mine now.
+We are more than just good friends.
+This is how the story ends.
+Too bad that you couldn't see...
+See the man that boy could be.
+There is more than meets the eye,
+I see the soul that is inside.`,
+
+      `He's just a boy, and I'm just a girl.
+Can I make it anymore obvious?
+We are in love.
+Haven't you heard how we rock each other's world?`,
+
+      `I'm with the skater boy.
+I said, "See ya later, boy."
+I'll be backstage after the show.
+I'll be at the studio singing the song we wrote
+About a girl you used to know.`,
+
+      `I'm with the skater boy.
+I said, "See ya later, boy."
+I'll be backstage after the show.
+I'll be at the studio singing the song we wrote
+About a girl you used to know.`,
+    ],
+    lyricsModified: [
+      `And lo, there was a lad.
+And verily, there was a maiden.
+Couldst thou make it more plain?
+The lad was of rebellious spirit.
+And the maiden did dance with grace.
+What further could be spoken?
+The lad’s heart longed for her.
+Yet she held her tongue.
+And behold, in secret, her heart did yearn likewise.
+But her companions, haughty in spirit, turned up their noses.
+For they were displeased by the raiment he wore, baggy and unrefined.`,
+
+      `The lad was called he who glideth upon the pavement.
+And the maiden proclaimed, “Depart from me, thou he who glideth upon the pavement.”
+He was deemed unworthy in her eyes.
+Her visage was comely, yet her thoughts dwelled in the heavens.
+She had need to descend, and return unto the earth.`,
+
+      `And it came to pass, five years hence, the maiden sat within her house, nursing her babe, alone.
+She turned on the glowing box of vision, and lo, whom did she behold?
+He who glideth upon the pavement, rising in fame upon the scrolls of MTV.
+She rang her companions, who knew already.
+Yea, they held passes to his gathering.
+She journeyed forth, stood amidst the multitude,
+And lifted her gaze unto the man she once refused.`,
+
+      `He was he who glideth upon the pavement.
+She had said, “Depart from me, thou he who glideth upon the pavement.”
+He was not esteemed in her sight.
+Now is he a man of renown,
+Striking his instrument with fervor.
+Doth her fair countenance now perceive his worth?`,
+
+      `He was he who glideth upon the pavement.
+She had said, “Depart from me, thou he who glideth upon the pavement.”
+He was not esteemed in her sight.
+Now is he a man of renown,
+Striking his instrument with fervor.
+Doth her fair countenance now perceive his worth?`,
+
+      `Hearken, O maiden, thou hast missed thine hour.
+For fortune hath turned, and now the lad is mine.
+We are joined, not in friendship alone, but in heart.
+Thus doth the tale reach its end.
+Woe unto thee, who saw not
+The man that the boy was destined to become.
+For beneath the flesh dwelleth a soul of light, hidden from thine eyes.`,
+
+      `He is but a boy, and I, a maid.
+What further proof dost thou seek?
+Our hearts are one.
+Hast thou not heard the song of our union, which shaketh the earth with joy?`,
+
+      `I dwell now with he who glideth upon the pavement.
+Yea, I said unto him, “Depart not from me, he who glideth upon the pavement.”
+I shall be behind the veil of the stage, when the playing hath ceased.
+And in the house of sound, we shall lift our voices,
+To sing of the one whom he once knew.`,
+
+      `I dwell now with he who glideth upon the pavement.
+Yea, I said unto him, “Depart not from me, he who glideth upon the pavement.”
+I shall be behind the veil of the stage, when the playing hath ceased.
+And in the house of sound, we shall lift our voices,
+To sing of the one whom he once knew.`,
+    ],
+  },
+  {
+    id: "15",
+    number: 15,
+    date: "2025-04-10",
+    title: "Someone Like You",
+    artist: "Adele",
+    link: "https://www.youtube.com/embed/hLQl3WQQoQ0",
+    style: "Private Investigator Notes",
+    lyricsOriginal: [
+      `I heard that you're settled down
+That you found a girl and you're married now.
+I heard that your dreams came true.
+Guess she gave you things I didn't give to you.`,
+
+      `Old friend, why are you so shy?
+Ain't like you to hold back or hide from the light.`,
+
+      `I hate to turn up out of the blue uninvited
+But I couldn't stay away, I couldn't fight it.
+I had hoped you'd see my face and that you'd be reminded
+That for me it isn't over.`,
+
+      `Never mind, I'll find someone like you
+I wish nothing but the best for you too
+Don't forget me, I beg
+I'll remember you said,
+"Sometimes it lasts in love but sometimes it hurts instead,
+Sometimes it lasts in love but sometimes it hurts instead"`,
+
+      `You know how the time flies
+Only yesterday was the time of our lives
+We were born and raised
+In a summer haze
+Bound by the surprise of our glory days`,
+
+      `I hate to turn up out of the blue uninvited
+But I couldn't stay away, I couldn't fight it.
+I'd hoped you'd see my face and that you'd be reminded
+That for me it isn't over.`,
+
+      `Never mind, I'll find someone like you
+I wish nothing but the best for you too
+Don't forget me, I beg
+I'll remember you said,
+"Sometimes it lasts in love but sometimes it hurts instead."`,
+
+      `Nothing compares
+No worries or cares
+Regrets and mistakes
+They are memories made.
+Who would have known how bittersweet this would taste?`,
+
+      `Never mind, I'll find someone like you
+I wish nothing but the best for you
+Don't forget me, I beg
+I'll remember you said,
+"Sometimes it lasts in love but sometimes it hurts instead".`,
+
+      `Never mind, I'll find someone like you
+I wish nothing but the best for you too
+Don't forget me, I beg
+I'll remember you said,
+"Sometimes it lasts in love but sometimes it hurts instead,
+Sometimes it lasts in love but sometimes it hurts instead."`,
+    ],
+    lyricsModified: [
+      `Received intel: subject has moved on.  
+Confirmed: new romantic partner, marital status changed.  
+Rumors indicate personal aspirations now fulfilled.  
+Suspect's partner provided emotional support previously absent.`,
+
+      `Observation: former associate exhibiting uncharacteristic reticence.  
+Behavior inconsistent with known personality — avoiding confrontation, evading contact.`,
+
+      `Incident: unexpected reappearance at known location.  
+Motivation unclear — possibly emotional impulse.  
+Stated intent: visual presence might trigger recognition, closure sought.  
+Conclusion: case unresolved from agent’s perspective.`,
+
+      `Resolution statement: agent will pursue similar profile elsewhere.  
+Well wishes extended.  
+Direct appeal made to preserve memory.  
+Recollection: subject once stated,  
+"Sometimes connections endure; other times, they result in emotional distress."`,
+
+      `Reflection: time elapsed rapidly.  
+Prior events feel recent — perceived as 'golden period.'  
+Location and context: warm season, shared upbringing.  
+Bond formed through unexpected shared success.`,
+
+      `Repeat incident: agent arrived unannounced.  
+Internal conflict acknowledged; impulse uncontrollable.  
+Hope persisted that contact would trigger recognition.  
+Personal closure still not achieved.`,
+
+      `Repeat resolution: search for similar candidate ongoing.  
+Agent continues to wish subject well.  
+Another request: memory retention.  
+Recalled statement,  
+"Sometimes connections endure; sometimes they cause pain."`,
+
+      `Summary: incomparable experience.  
+Minimal concerns during event duration.  
+Errors and regrets identified — categorized as formative memories.  
+Post-event emotional outcome: unexpectedly complex.`,
+
+      `Resolution reaffirmed: pursuit continues.  
+Subject remains in good standing.  
+Final plea to be remembered.  
+Noted phrase:  
+"Sometimes connections endure; sometimes they hurt."`,
+
+      `Final entry: pursuit ongoing.  
+Best wishes reiterated.  
+Direct emotional appeal logged.  
+Statement remains:  
+"Sometimes connections endure; sometimes they hurt.  
+Sometimes connections endure; sometimes they hurt."`,
+    ],
+  },
+  {
     id: "14",
     number: 14,
     date: "2025-04-09",
