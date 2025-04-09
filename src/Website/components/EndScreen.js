@@ -13,6 +13,7 @@ import { useToast } from "commons/util/useToast";
 import Countdown from "react-countdown";
 import { addDays, startOfDay } from "date-fns";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Box = styled.div`
   margin: 0 auto;
@@ -107,6 +108,9 @@ https://karolina.place/Recitle?id=${song.id}`
 
   return (
     <>
+      <Helmet>
+        <title>{`${state === GAME_STATE.WON ? "Victory" : "Game Over"}`} | Recitle</title>
+      </Helmet>
       {state === GAME_STATE.WON && <ConfettiExplosionStyled />}
       <Box className={className}>
         <Flexbox alignItems="center" flexDirection="column">

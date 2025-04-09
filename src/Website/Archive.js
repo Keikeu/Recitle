@@ -11,6 +11,7 @@ import { GAME_STATE } from "./Home";
 import { useMediaQuery } from "commons/util/useMediaQuery";
 import { BREAKPOINTS } from "commons/util/breakpoints";
 import { format, isBefore, isEqual, parseISO } from "date-fns";
+import { Helmet } from "react-helmet";
 
 const Box = styled.div`
   overflow-x: hidden;
@@ -96,45 +97,50 @@ function Archive({ className }) {
   const isSmallScreen = useMediaQuery(BREAKPOINTS.medium);
 
   return (
-    <Box className={className}>
-      <Container>
-        <Typography variant={isSmallScreen ? "h3" : "h2"} marginBottom={24} marginTop={isSmallScreen ? 24 : 0}>
-          Archive
-        </Typography>
+    <>
+      <Helmet>
+        <title>Archive | Recitle</title>
+      </Helmet>
+      <Box className={className}>
+        <Container>
+          <Typography variant={isSmallScreen ? "h3" : "h2"} marginBottom={24} marginTop={isSmallScreen ? 24 : 0}>
+            Archive
+          </Typography>
 
-        {songs
-          .filter(item => {
-            const itemDate = parseISO(item.date);
-            return isBefore(itemDate, new Date()) || isEqual(itemDate, new Date());
-          })
-          .map((song, index, array) => {
-            const archiveItem = songArchive?.[song.id] || {};
-            const maxVerses = song.lyricsOriginal.length;
-            return (
-              <SongBox key={index} to={`/?id=${song.id}`}>
-                <SongIndex variant="h4">#{array.length - index}</SongIndex>
-                {!isSmallScreen && <SongDate variant="body">{format(new Date(song.date), "PP")}</SongDate>}
-                <Squares
-                  maxVerses={maxVerses}
-                  steps={archiveItem.state === GAME_STATE.LOST ? archiveItem.steps : archiveItem.steps - 1}
-                  state={archiveItem.state}
-                />
-                <StatusIcon
-                  name={
-                    !archiveItem.state || archiveItem.state === GAME_STATE.PLAYING
-                      ? "chevron_right"
-                      : archiveItem.state === GAME_STATE.WON
-                      ? "check"
-                      : "close"
-                  }
-                  size={24}
-                  $state={archiveItem.state}
-                />
-              </SongBox>
-            );
-          })}
-      </Container>
-    </Box>
+          {songs
+            .filter(item => {
+              const itemDate = parseISO(item.date);
+              return isBefore(itemDate, new Date()) || isEqual(itemDate, new Date());
+            })
+            .map((song, index, array) => {
+              const archiveItem = songArchive?.[song.id] || {};
+              const maxVerses = song.lyricsOriginal.length;
+              return (
+                <SongBox key={index} to={`/?id=${song.id}`}>
+                  <SongIndex variant="h4">#{array.length - index}</SongIndex>
+                  {!isSmallScreen && <SongDate variant="body">{format(new Date(song.date), "PP")}</SongDate>}
+                  <Squares
+                    maxVerses={maxVerses}
+                    steps={archiveItem.state === GAME_STATE.LOST ? archiveItem.steps : archiveItem.steps - 1}
+                    state={archiveItem.state}
+                  />
+                  <StatusIcon
+                    name={
+                      !archiveItem.state || archiveItem.state === GAME_STATE.PLAYING
+                        ? "chevron_right"
+                        : archiveItem.state === GAME_STATE.WON
+                        ? "check"
+                        : "close"
+                    }
+                    size={24}
+                    $state={archiveItem.state}
+                  />
+                </SongBox>
+              );
+            })}
+        </Container>
+      </Box>
+    </>
   );
 }
 

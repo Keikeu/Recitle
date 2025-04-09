@@ -4,6 +4,7 @@ import styled from "styled-components/macro";
 import Button from "commons/components/Button";
 import Typography from "commons/components/Typography";
 import Flexbox from "commons/components/Flexbox";
+import { Helmet } from "react-helmet";
 
 const Box = styled.div`
   overflow-x: hidden;
@@ -29,48 +30,53 @@ const InstructionBox = styled(Flexbox)`
 
 function HowToPlay({ className }) {
   return (
-    <Box className={className}>
-      <Container>
-        <Typography variant="h2" marginY={32}>
-          How to play
-        </Typography>
-
-        <InstructionBox flexDirection="column" padding={16}>
-          <Typography variant="h4" marginBottom={8}>
-            Guess the Song
-          </Typography>
-          <Typography variant="paragraph" marginBottom={32}>
-            You will be given a paraphrased version of a song&apos;s lyrics. <br />
-            Try to guess the song based on the clues.
+    <>
+      <Helmet>
+        <title>How To Play | Recitle</title>
+      </Helmet>
+      <Box className={className}>
+        <Container>
+          <Typography variant="h2" marginY={32}>
+            How to play
           </Typography>
 
-          <Typography variant="h4" marginBottom={8}>
-            Uncover More Verses
-          </Typography>
-          <Typography variant="paragraph" marginBottom={32}>
-            After each guess, one more verse of the song will be revealed.
-          </Typography>
+          <InstructionBox flexDirection="column" padding={16}>
+            <Typography variant="h4" marginBottom={8}>
+              Guess the Song
+            </Typography>
+            <Typography variant="paragraph" marginBottom={32}>
+              You will be given a paraphrased version of a song&apos;s lyrics. <br />
+              Try to guess the song based on the clues.
+            </Typography>
 
-          <Typography variant="h4" marginBottom={8}>
-            Skip a Verse
-          </Typography>
-          <Typography variant="paragraph" marginBottom={32}>
-            If you&apos;re stuck, you can skip to the next verse.
-          </Typography>
+            <Typography variant="h4" marginBottom={8}>
+              Uncover More Verses
+            </Typography>
+            <Typography variant="paragraph" marginBottom={32}>
+              After each guess, one more verse of the song will be revealed.
+            </Typography>
 
-          <Typography variant="h4" marginBottom={8}>
-            Win or Lose
-          </Typography>
-          <Typography variant="paragraph">
-            If you guess the song correctly, you win! <br />
-            If you run out of verses without guessing, you lose.
-          </Typography>
-        </InstructionBox>
-        <Button link="/" size="large">
-          Play now
-        </Button>
-      </Container>
-    </Box>
+            <Typography variant="h4" marginBottom={8}>
+              Skip a Verse
+            </Typography>
+            <Typography variant="paragraph" marginBottom={32}>
+              If you&apos;re stuck, you can skip to the next verse.
+            </Typography>
+
+            <Typography variant="h4" marginBottom={8}>
+              Win or Lose
+            </Typography>
+            <Typography variant="paragraph">
+              If you guess the song correctly, you win! <br />
+              If you run out of verses without guessing, you lose.
+            </Typography>
+          </InstructionBox>
+          <Button link="/" size="large">
+            Play now
+          </Button>
+        </Container>
+      </Box>
+    </>
   );
 }
 
