@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import T from "prop-types";
 import styled from "styled-components/macro";
 import Typography from "commons/components/Typography";
@@ -86,7 +86,22 @@ function EndScreen({ className, song, state, steps }) {
   const maxVerses = song.lyricsModified.length;
   const stepsToDisplay = state === GAME_STATE.LOST ? steps : steps - 1;
 
+  useEffect(() => {
+    window.gtag("event", "end_game", {
+      state: state,
+      song_number: song.number,
+      song_title: song.title,
+      song_artist: song.artist,
+    });
+  }, []);
+
   function copyToClipboard() {
+    window.gtag("event", "copy_score_to_clipboard", {
+      song_number: song.number,
+      score: `${steps}/${maxVerses}`,
+      state: state,
+    });
+
     navigator.clipboard
       .writeText(
         `Recitle ${song.number}: ${steps}/${maxVerses} 

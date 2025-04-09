@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import T from "prop-types";
 import styled, { css } from "styled-components/macro";
 import Typography from "commons/components/Typography";
@@ -95,6 +95,10 @@ const StatusIcon = styled(Icon)`
 function Archive({ className }) {
   const songArchive = callLocalStorage("songArchive");
   const isSmallScreen = useMediaQuery(BREAKPOINTS.medium);
+
+  useEffect(() => {
+    window.gtag("event", "view_archive");
+  }, []);
 
   return (
     <>

@@ -125,6 +125,14 @@ function Home() {
   const [gameState, setGameState] = useState(GAME_STATE.PLAYING);
 
   useEffect(() => {
+    window.gtag("event", "view_song", {
+      song_number: currentSong.number,
+      song_title: currentSong.title,
+      song_artist: currentSong.artist,
+    });
+  }, []);
+
+  useEffect(() => {
     if (wasPlayed) {
       setStep(songArchive[id]?.steps);
       setGameState(songArchive[id]?.state);
@@ -156,6 +164,7 @@ function Home() {
   );
 
   function handleGuess() {
+    window.gtag("event", "submit");
     if (!guess) {
       return;
     }
@@ -178,6 +187,8 @@ function Home() {
   }
 
   function handleSkip() {
+    window.gtag("event", "skip");
+
     const newStep = step + 1;
     let newState;
 

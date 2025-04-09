@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import T from "prop-types";
 import styled from "styled-components/macro";
 import Button from "commons/components/Button";
@@ -29,6 +29,10 @@ const InstructionBox = styled(Flexbox)`
 `;
 
 function HowToPlay({ className }) {
+  useEffect(() => {
+    window.gtag("event", "view_how_to_play");
+  }, []);
+
   return (
     <>
       <Helmet>
