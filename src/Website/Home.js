@@ -15,6 +15,7 @@ import { useMediaQuery } from "commons/util/useMediaQuery";
 import { format, isAfter, parse } from "date-fns";
 import { AnimatePresence, motion } from "framer-motion";
 import Typography from "commons/components/Typography";
+import { trackEvent } from "commons/util/trackEvent";
 
 const Box = styled.div`
   position: relative;
@@ -125,7 +126,7 @@ function Home() {
   const [gameState, setGameState] = useState(GAME_STATE.PLAYING);
 
   useEffect(() => {
-    window.gtag("event", "view_song", {
+    trackEvent("view_song", {
       song_number: currentSong.number,
       song_title: currentSong.title,
       song_artist: currentSong.artist,
@@ -164,7 +165,7 @@ function Home() {
   );
 
   function handleGuess() {
-    window.gtag("event", "submit");
+    trackEvent("submit");
     if (!guess) {
       return;
     }
@@ -187,7 +188,7 @@ function Home() {
   }
 
   function handleSkip() {
-    window.gtag("event", "skip");
+    trackEvent("skip");
 
     const newStep = step + 1;
     let newState;

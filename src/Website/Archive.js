@@ -12,6 +12,7 @@ import { useMediaQuery } from "commons/util/useMediaQuery";
 import { BREAKPOINTS } from "commons/util/breakpoints";
 import { format, isBefore, isEqual, parseISO } from "date-fns";
 import { Helmet } from "react-helmet";
+import { trackEvent } from "commons/util/trackEvent";
 
 const Box = styled.div`
   overflow-x: hidden;
@@ -97,7 +98,7 @@ function Archive({ className }) {
   const isSmallScreen = useMediaQuery(BREAKPOINTS.medium);
 
   useEffect(() => {
-    window.gtag("event", "view_archive");
+    trackEvent("view_archive");
   }, []);
 
   return (

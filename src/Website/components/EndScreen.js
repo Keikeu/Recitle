@@ -14,6 +14,7 @@ import Countdown from "react-countdown";
 import { addDays, startOfDay } from "date-fns";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { trackEvent } from "commons/util/trackEvent";
 
 const Box = styled.div`
   margin: 0 auto;
@@ -87,7 +88,7 @@ function EndScreen({ className, song, state, steps }) {
   const stepsToDisplay = state === GAME_STATE.LOST ? steps : steps - 1;
 
   useEffect(() => {
-    window.gtag("event", "end_game", {
+    trackEvent("end_game", {
       state: state,
       song_number: song.number,
       song_title: song.title,
@@ -96,7 +97,7 @@ function EndScreen({ className, song, state, steps }) {
   }, []);
 
   function copyToClipboard() {
-    window.gtag("event", "copy_score_to_clipboard", {
+    trackEvent("copy_score_to_clipboard", {
       song_number: song.number,
       score: `${steps}/${maxVerses}`,
       state: state,

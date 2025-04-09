@@ -5,6 +5,7 @@ import Button from "commons/components/Button";
 import Typography from "commons/components/Typography";
 import Flexbox from "commons/components/Flexbox";
 import { Helmet } from "react-helmet";
+import { trackEvent } from "commons/util/trackEvent";
 
 const Box = styled.div`
   overflow-x: hidden;
@@ -30,7 +31,7 @@ const InstructionBox = styled(Flexbox)`
 
 function HowToPlay({ className }) {
   useEffect(() => {
-    window.gtag("event", "view_how_to_play");
+    trackEvent("view_how_to_play");
   }, []);
 
   return (
