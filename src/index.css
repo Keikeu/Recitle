@@ -90,7 +90,6 @@
 #root {
   min-height: 100vh;
   height: 100%;
-  /* overflow-x: hidden; it fucks with sticky headers but i need it for the recipe grid  */
 }
 
 * {
