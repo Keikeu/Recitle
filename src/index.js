@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import "./index.css";
 import { ToastProvider } from "commons/util/useToast";
 
@@ -17,7 +17,7 @@ const root = createRoot(container);
 root.render(
   // <React.StrictMode>
   <ToastProvider>
-    <BrowserRouter basename="/Recitle">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Website />}>
           <Route index element={<Home />} />
@@ -27,7 +27,7 @@ root.render(
 
         <Route path="*" element={<Page404 />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </ToastProvider>
   // </React.StrictMode>
 );
