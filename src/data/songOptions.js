@@ -1,5 +1,17 @@
 export const songOptions = [
   {
+    id: "19",
+    label: "Shape of You - Ed Sheeran",
+  },
+  {
+    id: "18",
+    label: "Do I Wanna Know - Arctic Monkeys",
+  },
+  {
+    id: "17",
+    label: "Sucker - Jonas Brothers",
+  },
+  {
     id: "16",
     label: "Sk8er Boi - Avril Lavigne",
   },
@@ -286,10 +298,6 @@ export const songOptions = [
   {
     id: "066",
     label: "Sunflower - Post Malone",
-  },
-  {
-    id: "067",
-    label: "Sucker - Jonas Brothers",
   },
   {
     id: "068",

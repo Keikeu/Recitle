@@ -1,4 +1,366 @@
 export const songs = [
+  //   {
+  //     id: "19",
+  //     number: 19,
+  //     date: "2025-04-14",
+  //     title: "Shape of You",
+  //     artist: "Ed Sheeran",
+  //     link: "https://www.youtube.com/embed/JGwWNGJdvx8",
+  //     style: "Retro 80s Commercial",
+  //     lyricsOriginal: [
+  //       `The club isn't the best place to find a lover
+  // So the bar is where I go
+  // Me and my friends at the table doing shots
+  // Drinking fast and then we talk slow
+  // And you come over and start up a conversation with just me
+  // And trust me I'll give it a chance now
+  // Take my hand, stop, put Van The Man on the jukebox
+  // And then we start to dance
+  // And now I'm singing like`,
+
+  //       `Girl, you know I want your love
+  // Your love was handmade for somebody like me
+  // Come on now, follow my lead
+  // I may be crazy, don't mind me
+  // Say, boy, let's not talk too much
+  // Grab on my waist and put that body on me
+  // Come on now, follow my lead
+  // Come, come on now, follow my lead`,
+
+  //       `I'm in love with the shape of you
+  // We push and pull like a magnet do
+  // Although my heart is falling too
+  // I'm in love with your body
+  // Last night you were in my room
+  // And now my bedsheets smell like you
+  // Every day discovering something brand new
+  // I'm in love with your body`,
+
+  //       `Oh I oh I oh I oh I
+  // I'm in love with your body
+  // Oh I oh I oh I oh I
+  // I'm in love with your body
+  // Oh I oh I oh I oh I
+  // I'm in love with your body
+  // Every day discovering something brand new
+  // I'm in love with the shape of you`,
+
+  //       `One week in we let the story begin
+  // We're going out on our first date
+  // You and me are thrifty, so go all you can eat
+  // Fill up your bag and I fill up a plate
+  // We talk for hours and hours about the sweet and the sour
+  // And how your family is doing okay
+  // And leave and get in a taxi, then kiss in the backseat
+  // Tell the driver make the radio play
+  // And I'm singing like`,
+
+  //       `Girl, you know I want your love
+  // Your love was handmade for somebody like me
+  // Come on now, follow my lead
+  // I may be crazy, don't mind me
+  // Say, boy, let's not talk too much
+  // Grab on my waist and put that body on me
+  // Come on now, follow my lead
+  // Come, come on now, follow my lead`,
+
+  //       `I'm in love with the shape of you
+  // We push and pull like a magnet do
+  // Although my heart is falling too
+  // I'm in love with your body
+  // Last night you were in my room
+  // And now my bedsheets smell like you
+  // Every day discovering something brand new
+  // I'm in love with your body`,
+
+  //       `Oh I oh I oh I oh I
+  // I'm in love with your body
+  // Oh I oh I oh I oh I
+  // I'm in love with your body
+  // Oh I oh I oh I oh I
+  // I'm in love with your body
+  // Every day discovering something brand new
+  // I'm in love with the shape of you`,
+
+  //       `Come on, be my baby, come on
+  // Come on, be my baby, come on
+  // Come on, be my baby, come on
+  // Come on, be my baby, come on
+  // Come on, be my baby, come on
+  // Come on, be my baby, come on
+  // Come on, be my baby, come on
+  // Come on, be my baby, come on`,
+
+  //       `I'm in love with the shape of you
+  // We push and pull like a magnet do
+  // Although my heart is falling too
+  // I'm in love with your body
+  // Last night you were in my room
+  // And now my bedsheets smell like you
+  // Every day discovering something brand new
+  // I'm in love with your body`,
+
+  //       `Come on, be my baby, come on
+  // Come on, be my baby, come on
+  // I'm in love with your body
+  // Come on, be my baby, come on
+  // Come on, be my baby, come on
+  // I'm in love with your body
+  // Come on, be my baby, come on
+  // Come on, be my baby, come on
+  // I'm in love with your body
+  // Every day discovering something brand new
+  // I'm in love with the shape of you`,
+  //     ],
+  //     lyricsModified: [],
+  //   },
+  {
+    id: "18",
+    number: 18,
+    date: "2025-04-13",
+    title: "Do I Wanna Know?",
+    artist: "Arctic Monkeys",
+    link: "https://www.youtube.com/embed/bpOSxM0rNPM",
+    style: "Conspiracy Theory",
+    lyricsOriginal: [
+      `Have you got colour in your cheeks?
+Do you ever get that fear that you can't shift
+The type that sticks around like summat in your teeth?
+Are there some aces up your sleeve?
+Have you no idea that you're in deep?
+I dreamt about you nearly every night this week
+How many secrets can you keep?
+'Cause there's this tune I found that makes me think of you somehow and I play it on repeat
+Until I fall asleep
+Spilling drinks on my settee`,
+
+      `(Do I wanna know?)
+If this feeling flows both ways?
+(Sad to see you go)
+Was sort of hoping that you'd stay
+(Baby, we both know)
+That the nights were mainly made for saying things that you can't say tomorrow day`,
+
+      `Crawling back to you`,
+
+      `Ever thought of calling when you've had a few?
+'Cause I always do
+Maybe I'm too busy being yours to fall for somebody new
+Now I've thought it through`,
+
+      `Crawling back to you`,
+
+      `So have you got the guts?
+Been wondering if your heart's still open and if so I wanna know what time it shuts
+Simmer down and pucker up
+I'm sorry to interrupt. It's just I'm constantly on the cusp of trying to kiss you
+I don't know if you feel the same as I do
+But we could be together if you wanted to`,
+
+      `(Do I wanna know?)
+If this feeling flows both ways?
+(Sad to see you go)
+Was sort of hoping that you'd stay
+(Baby, we both know)
+That the nights were mainly made for saying things that you can't say tomorrow day`,
+
+      `Crawling back to you (crawling back to you)`,
+
+      `Ever thought of calling when you've had a few? (you've had a few)
+'Cause I always do ('cause I always do)
+Maybe I'm too (maybe I'm too busy) busy being yours to fall for somebody new
+Now I've thought it through`,
+
+      `Crawling back to you`,
+
+      `(Do I wanna know?)
+If this feeling flows both ways?
+(Sad to see you go)
+Was sort of hoping that you'd stay
+(Baby, we both know)
+That the nights were mainly made for saying things that you can't say tomorrow day`,
+
+      `(Do I wanna know?)
+Too busy being yours to fall
+(Sad to see you go)
+Ever thought of calling darling?
+(Do I wanna know?)
+Do you want me crawling back to you?`,
+    ],
+    lyricsModified: [
+      `You ever feel like something’s planted in your head?
+Like a coded message you can’t unsee, stuck in your teeth?
+You think maybe they’re hiding tricks up their sleeve?
+Wake up, you’re deeper in this than you realize.
+Been dreaming about the same subject — every night this week.
+Coincidence? Doubt it.
+How many secrets are they storing?
+Found a looped signal — a melody that triggers memories of you.
+Been playing it nonstop… ‘til I black out.
+Evidence: beverage spillage during playback.`,
+
+      `(Is it mutual infiltration?)
+You leaving felt too clean.
+Almost like someone didn’t want you to stay.
+We both know — those late nights? Prime time for real talk.
+Stuff you can’t say when the sun’s up.`,
+
+      `Backtracking again. Classic.`,
+
+      `Ever get the urge to call after a few drinks?
+It’s always then — predictable pattern.
+Maybe I’m already too deep in this operation to notice new players.
+Finally started putting the puzzle together.`,
+
+      `Yup. Returning to point of origin.`,
+
+      `You got the nerve for this?
+Is your emotional firewall still down? If yes — I need timestamps.
+Calm your frequencies. Prep for contact.
+Apologies for the interference — this signal’s hard to suppress.
+I’m always on the verge of making a move.
+No clue if your reception’s tuned to mine.
+But if we synced up? The possibilities…`,
+
+      `(Repeat query: Is this two-way traffic?)
+You disappearing wasn’t random.
+Kinda hoped you’d ignore the exit protocol.
+Let’s face it — those late transmissions?
+They carry the real data.`,
+
+      `Return sequence initiated. (Yep, again.)`,
+
+      `Thought about calling after exposure? (You always do.)
+That makes two of us.
+Maybe I’m too embedded in this mission to recruit someone new.
+Assessment updated post-analysis.`,
+
+      `Back at square one.`,
+
+      `(Is this loop mutual?)
+Still feeling the disconnect.
+Still wondering if you’d break silence.
+Still decoding what this all meant during the night ops.`,
+
+      `(Do I even want the truth?)
+Already compromised by you.
+Did you ever plan to reestablish contact?
+Bottom line — am I supposed to keep crawling back into this?`,
+    ],
+  },
+  {
+    id: "17",
+    number: 17,
+    date: "2025-04-12",
+    title: "Sucker",
+    artist: "Jonas Brothers",
+    link: "https://www.youtube.com/embed/CnAmeh0-E-U",
+    style: "Vice President's Speech",
+    lyricsOriginal: [
+      `We go together
+Better than birds of a feather, you and me
+We change the weather, yeah
+I'm feelin' heat in December when you're 'round me`,
+
+      `I've been dancin' on top of cars and stumblin' out of bars
+I follow you through the dark, can't get enough
+You're the medicine and the pain, the tattoo inside my brain
+And, baby, you know it's obvious`,
+
+      `I'm a sucker for you
+You say the word and I'll go anywhere blindly
+I'm a sucker for you, yeah
+Any road you take, you know that you'll find me
+I'm a sucker for all the subliminal things
+No one knows about you (About you), about you (About you)
+And you're makin' the typical me break my typical rules
+It's true, I'm a sucker for you, yeah`,
+
+      `Don't complicate it (Yeah)
+'Cause I know you and you know everything about me
+I can't remember (Yeah) all of the nights
+I don't remember when you're 'round me (Oh, yeah, yeah)`,
+
+      `I've been dancin' on top of cars and stumblin' out of bars
+I follow you through the dark, can't get enough
+You're the medicine and the pain, the tattoo inside my brain
+And, baby, you know it's obvious`,
+
+      `I'm a sucker for you
+You say the word and I'll go anywhere blindly
+I'm a sucker for you, yeah
+Any road you take, you know that you'll find me
+I'm a sucker for all the subliminal things
+No one knows about you (About you), about you (About you)
+And you're makin' the typical me break my typical rules
+It's true, I'm a sucker for you, yeah (Uh)`,
+
+      `(I'm a sucker for you)
+I've been dancin' on top of cars and stumblin' out of bars
+I follow you through the dark, can't get enough
+You're the medicine and the pain, the tattoo inside my brain
+And, baby, you know it's obvious`,
+
+      `I'm a sucker for you, yeah
+Say the word and I'll go anywhere blindly
+I'm a sucker for you, yeah
+Any road you take, you know that you'll find me
+I'm a sucker for all the subliminal things
+No one knows about you (About you), about you (About you)
+And you're makin' the typical me break my typical rules
+It's true, I'm a sucker for you (Uh)
+I'm a sucker for you`,
+    ],
+    lyricsModified: [
+      `Mr. President, we operate in tandem,
+With a synergy stronger than nature’s own design.
+Together, we shift the course of events,
+Even the seasons bend when you're near — December feels like July.`,
+
+      `Sir, I have navigated chaos — stood atop wreckage, staggered from tumult.
+Yet in darkness, I am drawn to your guidance — insatiably.
+You are both my cure and my affliction, a constant presence in my thoughts.
+Frankly, it's undeniable.`,
+
+      `I am unequivocally devoted to you.
+Your directives? I follow without hesitation or question.
+Indeed, wherever you lead, I will be in pursuit.
+You influence me in ways unknown to others.
+You disrupt my patterns, rewrite my rules,
+And the truth is clear: I am wholly committed to you.`,
+
+      `Let’s not overcomplicate the matter.
+You understand me intimately — as I do you.
+The details blur in your presence —
+Nights once remembered, now vanish when you're near.`,
+
+      `Again, I’ve found myself immersed in chaos,
+Yet I pursue your path, undeterred, drawn to your light.
+You're the salve and the sting, etched permanently in my consciousness.
+Mr. President, the signs are evident.`,
+
+      `I remain devoted to you.
+Speak, and I will respond without delay.
+I walk every path you mark, without fail.
+You hold a truth no one else perceives.
+You compel me to abandon the expected, to step outside the mold.
+It is, without doubt, because of you.`,
+
+      `(And yes, I remain devoted.)
+Once more, I’ve walked through uncertainty and missteps,
+Yet I follow where you go, unsatisfied until I do.
+You reside within my mind — an indelible force.
+Mr. President, there’s no denying it now.`,
+
+      `You have my full allegiance.
+You call, and I arrive, no questions asked.
+You lead, and I follow, without pause.
+There are details only I know of you,
+And because of them, you dismantle my old self and summon the new.
+It's a fact: I am entirely yours.
+Yes, sir — I'm yours.`,
+    ],
+  },
   {
     id: "16",
     number: 16,
