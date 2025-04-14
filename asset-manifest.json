@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Recitle/static/css/main.0b23a257.css",
-    "main.js": "/Recitle/static/js/main.6322bc1e.js",
+    "main.js": "/Recitle/static/js/main.8673e99c.js",
     "static/media/background3.jpg": "/Recitle/static/media/background3.63cc06d757f61dba2c83.jpg",
     "index.html": "/Recitle/index.html",
     "main.0b23a257.css.map": "/Recitle/static/css/main.0b23a257.css.map",
-    "main.6322bc1e.js.map": "/Recitle/static/js/main.6322bc1e.js.map"
+    "main.8673e99c.js.map": "/Recitle/static/js/main.8673e99c.js.map"
   },
   "entrypoints": [
     "static/css/main.0b23a257.css",
-    "static/js/main.6322bc1e.js"
+    "static/js/main.8673e99c.js"
   ]
 }
