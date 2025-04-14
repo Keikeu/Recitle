@@ -1,119 +1,223 @@
 export const songs = [
-  //   {
-  //     id: "19",
-  //     number: 19,
-  //     date: "2025-04-14",
-  //     title: "Shape of You",
-  //     artist: "Ed Sheeran",
-  //     link: "https://www.youtube.com/embed/JGwWNGJdvx8",
-  //     style: "Retro 80s Commercial",
-  //     lyricsOriginal: [
-  //       `The club isn't the best place to find a lover
-  // So the bar is where I go
-  // Me and my friends at the table doing shots
-  // Drinking fast and then we talk slow
-  // And you come over and start up a conversation with just me
-  // And trust me I'll give it a chance now
-  // Take my hand, stop, put Van The Man on the jukebox
-  // And then we start to dance
-  // And now I'm singing like`,
+  {
+    id: "19",
+    number: 19,
+    date: "2025-04-14",
+    title: "Shape of You",
+    artist: "Ed Sheeran",
+    link: "https://www.youtube.com/embed/JGwWNGJdvx8",
+    style: "Retro 80s Commercial",
+    lyricsOriginal: [
+      `The club isn't the best place to find a lover
+So the bar is where I go
+Me and my friends at the table doing shots
+Drinking fast and then we talk slow
+And you come over and start up a conversation with just me
+And trust me I'll give it a chance now
+Take my hand, stop, put Van The Man on the jukebox
+And then we start to dance
+And now I'm singing like`,
 
-  //       `Girl, you know I want your love
-  // Your love was handmade for somebody like me
-  // Come on now, follow my lead
-  // I may be crazy, don't mind me
-  // Say, boy, let's not talk too much
-  // Grab on my waist and put that body on me
-  // Come on now, follow my lead
-  // Come, come on now, follow my lead`,
+      `Girl, you know I want your love
+Your love was handmade for somebody like me
+Come on now, follow my lead
+I may be crazy, don't mind me
+Say, boy, let's not talk too much
+Grab on my waist and put that body on me
+Come on now, follow my lead
+Come, come on now, follow my lead`,
 
-  //       `I'm in love with the shape of you
-  // We push and pull like a magnet do
-  // Although my heart is falling too
-  // I'm in love with your body
-  // Last night you were in my room
-  // And now my bedsheets smell like you
-  // Every day discovering something brand new
-  // I'm in love with your body`,
+      `I'm in love with the shape of you
+We push and pull like a magnet do
+Although my heart is falling too
+I'm in love with your body
+Last night you were in my room
+And now my bedsheets smell like you
+Every day discovering something brand new
+I'm in love with your body`,
 
-  //       `Oh I oh I oh I oh I
-  // I'm in love with your body
-  // Oh I oh I oh I oh I
-  // I'm in love with your body
-  // Oh I oh I oh I oh I
-  // I'm in love with your body
-  // Every day discovering something brand new
-  // I'm in love with the shape of you`,
+      `Oh I oh I oh I oh I
+I'm in love with your body
+Oh I oh I oh I oh I
+I'm in love with your body
+Oh I oh I oh I oh I
+I'm in love with your body
+Every day discovering something brand new
+I'm in love with the shape of you`,
 
-  //       `One week in we let the story begin
-  // We're going out on our first date
-  // You and me are thrifty, so go all you can eat
-  // Fill up your bag and I fill up a plate
-  // We talk for hours and hours about the sweet and the sour
-  // And how your family is doing okay
-  // And leave and get in a taxi, then kiss in the backseat
-  // Tell the driver make the radio play
-  // And I'm singing like`,
+      `One week in we let the story begin
+We're going out on our first date
+You and me are thrifty, so go all you can eat
+Fill up your bag and I fill up a plate
+We talk for hours and hours about the sweet and the sour
+And how your family is doing okay
+And leave and get in a taxi, then kiss in the backseat
+Tell the driver make the radio play
+And I'm singing like`,
 
-  //       `Girl, you know I want your love
-  // Your love was handmade for somebody like me
-  // Come on now, follow my lead
-  // I may be crazy, don't mind me
-  // Say, boy, let's not talk too much
-  // Grab on my waist and put that body on me
-  // Come on now, follow my lead
-  // Come, come on now, follow my lead`,
+      `Girl, you know I want your love
+Your love was handmade for somebody like me
+Come on now, follow my lead
+I may be crazy, don't mind me
+Say, boy, let's not talk too much
+Grab on my waist and put that body on me
+Come on now, follow my lead
+Come, come on now, follow my lead`,
 
-  //       `I'm in love with the shape of you
-  // We push and pull like a magnet do
-  // Although my heart is falling too
-  // I'm in love with your body
-  // Last night you were in my room
-  // And now my bedsheets smell like you
-  // Every day discovering something brand new
-  // I'm in love with your body`,
+      `I'm in love with the shape of you
+We push and pull like a magnet do
+Although my heart is falling too
+I'm in love with your body
+Last night you were in my room
+And now my bedsheets smell like you
+Every day discovering something brand new
+I'm in love with your body`,
 
-  //       `Oh I oh I oh I oh I
-  // I'm in love with your body
-  // Oh I oh I oh I oh I
-  // I'm in love with your body
-  // Oh I oh I oh I oh I
-  // I'm in love with your body
-  // Every day discovering something brand new
-  // I'm in love with the shape of you`,
+      `Oh I oh I oh I oh I
+I'm in love with your body
+Oh I oh I oh I oh I
+I'm in love with your body
+Oh I oh I oh I oh I
+I'm in love with your body
+Every day discovering something brand new
+I'm in love with the shape of you`,
 
-  //       `Come on, be my baby, come on
-  // Come on, be my baby, come on
-  // Come on, be my baby, come on
-  // Come on, be my baby, come on
-  // Come on, be my baby, come on
-  // Come on, be my baby, come on
-  // Come on, be my baby, come on
-  // Come on, be my baby, come on`,
+      `Come on, be my baby, come on
+Come on, be my baby, come on
+Come on, be my baby, come on
+Come on, be my baby, come on
+Come on, be my baby, come on
+Come on, be my baby, come on
+Come on, be my baby, come on
+Come on, be my baby, come on`,
 
-  //       `I'm in love with the shape of you
-  // We push and pull like a magnet do
-  // Although my heart is falling too
-  // I'm in love with your body
-  // Last night you were in my room
-  // And now my bedsheets smell like you
-  // Every day discovering something brand new
-  // I'm in love with your body`,
+      `I'm in love with the shape of you
+We push and pull like a magnet do
+Although my heart is falling too
+I'm in love with your body
+Last night you were in my room
+And now my bedsheets smell like you
+Every day discovering something brand new
+I'm in love with your body`,
 
-  //       `Come on, be my baby, come on
-  // Come on, be my baby, come on
-  // I'm in love with your body
-  // Come on, be my baby, come on
-  // Come on, be my baby, come on
-  // I'm in love with your body
-  // Come on, be my baby, come on
-  // Come on, be my baby, come on
-  // I'm in love with your body
-  // Every day discovering something brand new
-  // I'm in love with the shape of you`,
-  //     ],
-  //     lyricsModified: [],
-  //   },
+      `Come on, be my baby, come on
+Come on, be my baby, come on
+I'm in love with your body
+Come on, be my baby, come on
+Come on, be my baby, come on
+I'm in love with your body
+Come on, be my baby, come on
+Come on, be my baby, come on
+I'm in love with your body
+Every day discovering something brand new
+I'm in love with the shape of you`,
+    ],
+    lyricsModified: [
+      `The nightclub? Not ideal for sparks to fly.
+You want real chemistry? Head to your local bar!
+Grab your pals, round up some shots!
+Sip quick — but speak smooth.
+Then someone strolls up, just chatting with you,
+Give 'em a shot — it's a once-in-a-lifetime deal!
+Take their hand, spin that jukebox magic,
+Cue a classic, let the rhythm lead,
+And suddenly — boom — you're singing along.`,
+
+      `Hey there, you're chasing that custom-made affection.
+That handcrafted kind, tailor-fit to your vibe.
+Step up, follow where the fun flows.
+A little wild? That's part of the thrill.
+Let’s skip the chatter, skip the scripts,
+Just hold on tight, feel the spark.
+No overthinking — just go with the beat.
+Yeah, lean in, just follow that groove.`,
+
+      `You're vibing with their silhouette, no doubt.
+You two click — push and pull like magic.
+Even your heart’s syncing up to the rhythm.
+You’re drawn in, totally hooked.
+Last night, they were chillin' in your space.
+Now everything smells like "them" — wild, right?
+Each day? A brand-new chapter.
+You’re head-over-heels for their whole vibe.`,
+
+      `Whoa now, whoa now, slow that roll —
+You’re all in on the silhouette.
+Whoa now, whoa now, can't shake it —
+That body’s got you hypnotized.
+Whoa now, whoa now, it’s magnetic —
+You're loving every bit.
+New feels every morning, like clockwork.
+Yeah, you're sold on the whole design.`,
+
+      `Seven days in, you're living the movie.
+First official date night? Let’s gooo!
+You're frugal — buffet? Say no more!
+Fill your tote, pile your plate — win-win!
+Chit-chat all night — sweet stuff, sour stuff,
+Family updates, deep dives — it’s real!
+Then roll out in a taxi, smooch in the back,
+Tell the driver: crank those jams!
+And boom — that song hits, you're feelin’ it.`,
+
+      `Hey there, you're chasing that custom-made affection.
+That handcrafted kind, tailor-fit to your vibe.
+Step up, follow where the fun flows.
+A little wild? That's part of the thrill.
+Let’s skip the chatter, skip the scripts,
+Just hold on tight, feel the spark.
+No overthinking — just go with the beat.
+Yeah, lean in, just follow that groove.`,
+
+      `You're vibing with their silhouette, no doubt.
+You two click — push and pull like magic.
+Even your heart’s syncing up to the rhythm.
+You’re drawn in, totally hooked.
+Last night, they were chillin' in your space.
+Now everything smells like "them" — wild, right?
+Each day? A brand-new chapter.
+You’re head-over-heels for their whole vibe.`,
+
+      `Whoa now, whoa now, slow that roll —
+You’re all in on the silhouette.
+Whoa now, whoa now, can't shake it —
+That body’s got you hypnotized.
+Whoa now, whoa now, it’s magnetic —
+You're loving every bit.
+New feels every morning, like clockwork.
+Yeah, you're sold on the whole design.`,
+
+      `Come on — be bold, take that shot!
+Come on — be bold, take that shot!
+Come on — be bold, take that shot!
+Come on — be bold, take that shot!
+Come on — be bold, take that shot!
+Come on — be bold, take that shot!
+Come on — be bold, take that shot!
+Come on — be bold, take that shot!`,
+
+      `You're vibing with their silhouette, no doubt.
+You two click — push and pull like magic.
+Even your heart’s syncing up to the rhythm.
+You’re drawn in, totally hooked.
+Last night, they were chillin' in your space.
+Now everything smells like "them" — wild, right?
+Each day? A brand-new chapter.
+You’re head-over-heels for their whole vibe.`,
+
+      `Come on — be bold, take that shot!
+Come on — be bold, take that shot!
+You’re still thinking about that body.
+Come on — be bold, take that shot!
+Come on — be bold, take that shot!
+Yeah, that shape’s still on your mind.
+Come on — be bold, take that shot!
+Come on — be bold, take that shot!
+You’re caught up in the mystery.
+Each day hits different — no two the same.
+And you're sold on the shape, no refunds.`,
+    ],
+  },
   {
     id: "18",
     number: 18,
