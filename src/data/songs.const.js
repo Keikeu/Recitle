@@ -1,8 +1,242 @@
 export const songs = [
   {
+    id: "21",
+    number: 21,
+    date: "2026-03-21",
+    title: "Creep",
+    artist: "Radiohead",
+    link: "https://www.youtube.com/embed/",
+    style: "",
+    lyricsOriginal: [
+      `When you were here before
+Couldn't look you in the eye
+You're just like an angel
+Your skin makes me cry
+You float like a feather
+In a beautiful world
+I wish I was special
+You're so fucking special`,
+
+      `But I'm a creep
+I'm a weirdo
+What the hell am I doing here?
+I don't belong here`,
+
+      `I don't care if it hurts
+I want to have control
+I want a perfect body
+I want a perfect soul
+I want you to notice
+When I'm not around
+You're so fucking special
+I wish I was special`,
+
+      `But I'm a creep
+I'm a weirdo
+What the hell am I doing here?
+I don't belong here`,
+
+      `She's running out again
+She's running out
+She run, run, run, run
+Run`,
+
+      `Whatever makes you happy
+Whatever you want
+You're so fucking special
+I wish I was special`,
+
+      `But I'm a creep
+I'm a weirdo
+What the hell am I doing here?
+I don't belong here
+I don't belong here`,
+    ],
+    lyricsModified: [],
+  },
+  {
+    id: "20",
+    number: 20,
+    date: "2026-03-20",
+    title: "Levitating",
+    artist: "Dua Lipa",
+    link: "https://www.youtube.com/embed/TUVcZfQe-Kw",
+    style: "Magician's Spellbinding Patter",
+    lyricsOriginal: [
+      `If you wanna run away with me, I know a galaxy
+And I can take you for a ride
+I had a premonition that we fell into a rhythm
+Where the music don't stop for life
+Glitter in the sky, glitter in my eyes
+Shining just the way I like
+If you're feeling like you need a little bit of company
+You met me at the perfect time`,
+
+      `You want me, I want you, baby
+My sugarboo, I'm levitating
+The Milky Way, we're renegading
+Yeah, yeah, yeah, yeah, yeah`,
+
+      `I got you, moonlight, you're my starlight
+I need you all night, come on, dance with me
+I'm levitating
+You, moonlight, you're my starlight (You're the moonlight)
+I need you all night, come on, dance with me
+I'm levitating`,
+
+      `I believe that you're for me, I feel it in our energy
+I see us written in the stars
+We can go wherever, so let's do it now or never
+Baby, nothing's ever, ever too far
+Glitter in the sky, glitter in our eyes
+Shining just the way we are
+I feel like we're forever every time we get together
+But whatever, let's get lost on Mars`,
+
+      `You want me, I want you, baby
+My sugarboo, I'm levitating
+The Milky Way, we're renegading
+Yeah, yeah, yeah, yeah, yeah`,
+
+      `I got you, moonlight, you're my starlight
+I need you all night, come on, dance with me
+I'm levitating
+You, moonlight, you're my starlight (You're the moonlight)
+I need you all night, come on, dance with me
+I'm levitating`,
+
+      `You can fly away with me tonight
+You can fly away with me tonight
+Baby, let me take you for a ride
+Yeah, yeah, yeah, yeah, yeah
+I'm levitating (Woo)
+You can fly away with me tonight
+You can fly away with me tonight
+Baby, let me take you for a ride
+Yeah, yeah, yeah, yeah, yeah (Woo)`,
+
+      `My love is like a rocket, watch it blast off
+And I'm feeling so electric, dance my ass off
+And even if I wanted to, I can't stop
+Yeah, yeah, yeah, yeah, yeah
+My love is like a rocket, watch it blast off
+And I'm feeling so electric, dance my ass off
+And even if I wanted to, I can't stop
+Yeah, yeah, yeah, yeah, yeah`,
+
+      `You want me, I want you, baby
+My sugarboo, I'm levitating
+The Milky Way, we're renegading`,
+
+      `I got you (Yeah), moonlight, you're my starlight
+I need you all night (All night), come on, dance with me
+I'm levitating (Woo)`,
+
+      `You can fly away with me tonight (Tonight)
+You can fly away with me tonight
+Baby, let me take you for a ride
+Yeah, yeah, yeah, yeah, yeah (Take you for a ride)
+I'm levitating (Woo)
+You can fly away with me tonight (Tonight)
+You can fly away with me tonight
+Baby, let me take you for a ride
+Yeah, yeah, yeah, yeah, yeah (Let me take you for a ride)`,
+
+      `I got you, moonlight, you're my starlight (You are my starlight)
+I need you all night, come on, dance with me (Come on, dance with me)
+I'm levitating
+You, moonlight, you're my starlight (You're the moonlight)
+I need you all night, come on, dance with me
+I'm levitating`,
+    ],
+    lyricsModified: [
+      `Should your heart crave escape, I hold the portal key —
+A realm of stars awaits your leap!
+I foresaw this moment: two souls caught in cadence,
+Where the rhythm enchants, eternal and deep.
+Glimmers above, twinkles in your gaze —
+Aligned just as the prophecy said.
+If loneliness haunts your night with whispers,
+You've summoned me — right when the stars turned red.`,
+
+      `Desire dances in your eyes — and mine,
+Sugarbound, we begin to rise!
+Through the galaxies we defy the rules,
+Vanishing into the velvet skies — yes, yes, yes!`,
+
+      `I conjure you, moonbeam — you're my northern light.
+Stay 'til dawn — let the enchantment ignite!
+We float, we twirl — we’re levitating.
+You, moonbeam, a sorcerer's delight —
+Stay 'til dawn — let the music invite!
+We spin in the stars — no hesitating.`,
+
+      `You were fated for this — it buzzes in our aura.
+The cosmos wrote our names in gold.
+We could vanish now, no maps, no limits —
+Everywhere’s reachable when you’re bold.
+Glimmers above, sparkles in our stare —
+Exactly how we were meant to glow.
+Time bends around us when we meet again —
+Forget logic — let’s disappear to Mars, you know?`,
+
+      `Desire dances in your eyes — and mine,
+Sugarbound, we begin to rise!
+Through the galaxies we defy the rules,
+Vanishing into the velvet skies — yes, yes, yes!`,
+
+      `I conjure you, moonbeam — you're my northern light.
+Stay 'til dawn — let the enchantment ignite!
+We float, we twirl — we’re levitating.
+You, moonbeam, a sorcerer's delight —
+Stay 'til dawn — let the music invite!
+We spin in the stars — no hesitating.`,
+
+      `You can rise with me tonight — no broomstick needed!
+Take flight — a velvet-charmed ride!
+Yes, yes — let the levitation begin! (Abracadabra!)
+Come now, glide with me tonight —
+With a flick of the wrist, we'll disappear right.
+Yes, yes — let the sorcery spin! (Alakazam!)`,
+
+      `My love’s a firework — stand back, watch it soar!
+Buzzing like a wand — can't stop this uproar!
+Even if I tried — the spell is sealed,
+Yes, yes — no going back for sure!
+My love’s a rocket — three, two, one, ignite!
+Buzzing with volts — I vanish in light!
+Even if I wished it, I can’t undo —
+Yes, yes — the magic clings like glue.`,
+
+      `Desire dances in your eyes — and mine,
+Sugarbound, we begin to rise!
+Through the galaxies we defy the rules —
+Vanishing into the velvet skies.`,
+
+      `I conjure you (oh yes), moonlight — my radiant spark!
+All through the night (so bright), come sway with the arc!
+We’re levitating now — up, up, and away! (Hocus pocus!)`,
+
+      `Come, lift off into mystery tonight (tonight!)
+Let’s vanish beneath the twilight!
+Yes, yes — I’ll be your guide!
+I’m levitating (woo!)
+Soar with me through the endless dark (tonight!)
+I’ll whisk you on a cosmic arc!
+Yes, yes — let wonder be our ride! (Let me take you for a ride!)`,
+
+      `I’ve got you, moonlight — you dazzle like fate!
+I need your shine — now don’t hesitate!
+Join me in the sky — we’re levitating.
+You, moonlight — you mystical thing!
+Let’s float, let’s spin, let the stardust sing!
+We’re drifting higher — no gravitating.`,
+    ],
+  },
+  {
     id: "19",
     number: 19,
-    date: "2025-04-14",
+    date: "2026-03-19",
     title: "Shape of You",
     artist: "Ed Sheeran",
     link: "https://www.youtube.com/embed/JGwWNGJdvx8",
@@ -221,7 +455,7 @@ And you're sold on the shape, no refunds.`,
   {
     id: "18",
     number: 18,
-    date: "2025-04-13",
+    date: "2026-03-18",
     title: "Do I Wanna Know?",
     artist: "Arctic Monkeys",
     link: "https://www.youtube.com/embed/bpOSxM0rNPM",
@@ -355,7 +589,7 @@ Bottom line — am I supposed to keep crawling back into this?`,
   {
     id: "17",
     number: 17,
-    date: "2025-04-12",
+    date: "2026-03-17",
     title: "Sucker",
     artist: "Jonas Brothers",
     link: "https://www.youtube.com/embed/CnAmeh0-E-U",
@@ -468,7 +702,7 @@ Yes, sir — I'm yours.`,
   {
     id: "16",
     number: 16,
-    date: "2025-04-11",
+    date: "2026-03-16",
     title: "Sk8er Boi",
     artist: "Avril Lavigne",
     link: "https://www.youtube.com/embed/TIy3n2b7V9k",
@@ -613,7 +847,7 @@ To sing of the one whom he once knew.`,
   {
     id: "15",
     number: 15,
-    date: "2025-04-10",
+    date: "2026-03-15",
     title: "Someone Like You",
     artist: "Adele",
     link: "https://www.youtube.com/embed/hLQl3WQQoQ0",
@@ -733,7 +967,7 @@ Sometimes connections endure; sometimes they hurt."`,
   {
     id: "14",
     number: 14,
-    date: "2025-04-09",
+    date: "2026-03-14",
     title: "Highway to Hell",
     artist: "AC/DC",
     link: "https://www.youtube.com/embed/l482T0yNkeo",
@@ -834,7 +1068,7 @@ I'm rollin' down that glitter lane`,
   {
     id: "13",
     number: 13,
-    date: "2025-04-08",
+    date: "2026-03-13",
     title: "Blinding Lights",
     artist: "The Weeknd",
     link: "https://www.youtube.com/embed/4NRXx6U8ABQ",
@@ -931,7 +1165,7 @@ And darlin’, sleep won’t find me ‘til your touch does.`,
   {
     id: "12",
     number: 12,
-    date: "2025-04-07",
+    date: "2026-03-12",
     title: "Somebody That I Used to Know",
     artist: "Gotye",
     link: "https://www.youtube.com/embed/8UVNT4wvIGY",
@@ -1043,7 +1277,7 @@ Someone`,
   {
     id: "11",
     number: 11,
-    date: "2025-04-06",
+    date: "2026-03-11",
     title: "Lose Yourself",
     artist: "Eminem",
     link: "https://www.youtube.com/embed/xFYQQPAOz7Y",
@@ -1223,7 +1457,7 @@ Engage.`,
   {
     id: "10",
     number: 10,
-    date: "2025-04-05",
+    date: "2026-03-10",
     title: "Eye of the Tiger",
     artist: "Survivor",
     link: "https://www.youtube.com/embed/btPJPFnesV4",
@@ -1326,7 +1560,7 @@ The drive of the achiever`,
   {
     id: "9",
     number: 9,
-    date: "2025-04-04",
+    date: "2026-03-09",
     title: "Zombie",
     artist: "The Cranberries",
     link: "https://www.youtube.com/embed/6Ejga4kJUts",
@@ -1427,7 +1661,7 @@ Hey, oh, ya, ya-a`,
   {
     id: "8",
     number: 8,
-    date: "2025-04-03",
+    date: "2026-03-08",
     title: "All Star",
     artist: "Smash Mouth",
     link: "https://www.youtube.com/embed/L_jWHffIx5E",
@@ -1566,7 +1800,7 @@ Only the brave ever shatter the mold`,
   {
     id: "7",
     number: 7,
-    date: "2025-04-02",
+    date: "2026-03-07",
     title: "Toxic",
     artist: "Britney Spears",
     link: "https://www.youtube.com/embed/LOZuxwVk7TU",
@@ -1673,7 +1907,7 @@ I am ready now, take me as thine own`,
   {
     id: "6",
     number: 6,
-    date: "2025-04-01",
+    date: "2026-03-06",
     title: "Wonderwall",
     artist: "Oasis",
     link: "https://www.youtube.com/embed/bx1Bh8ZvH84",
@@ -1789,7 +2023,7 @@ Thou art the one who doth save me (save me)`,
   {
     id: "5",
     number: 5,
-    date: "2025-03-31",
+    date: "2026-03-05",
     title: "Bad Guy",
     artist: "Billie Eilish",
     link: "https://www.youtube.com/embed/DyDfgMOUjCI",
@@ -1915,7 +2149,7 @@ I'm the certified villain.`,
   {
     id: "4",
     number: 4,
-    date: "2025-03-30",
+    date: "2026-03-04",
     title: "Smooth Criminal",
     artist: "Michael Jackson",
     link: "https://www.youtube.com/embed/h_D3VFfhvs4",
@@ -2037,7 +2271,7 @@ You sought the safety of your chamber, yet cruel fate pursued you; you were stru
   {
     id: "3",
     number: 3,
-    date: "2025-03-29",
+    date: "2026-03-03",
     title: "Bohemian Rhapsody",
     artist: "Queen",
     link: "https://www.youtube.com/embed/fJ9rUzIMcZQ",
@@ -2158,7 +2392,7 @@ Naught be matterin’ to meeeee...`,
   {
     id: "2",
     number: 2,
-    date: "2025-03-28",
+    date: "2026-03-02",
     title: "I write sins not tragedies",
     artist: "Panic! At The Disco",
     link: "https://www.youtube.com/embed/vc6vs-l5dkc",
@@ -2270,7 +2504,7 @@ With a little dignity and some wise thinking, see?"`,
   {
     id: "1",
     number: 1,
-    date: "2025-03-27",
+    date: "2026-03-01",
     title: "Poker Face",
     artist: "Lady Gaga",
     link: "https://www.youtube.com/embed/bESGLojNYSo",

@@ -1,5 +1,9 @@
 export const songOptions = [
   {
+    id: "20",
+    label: "Levitating - Dua Lipa",
+  },
+  {
     id: "19",
     label: "Shape of You - Ed Sheeran",
   },
@@ -114,10 +118,6 @@ export const songOptions = [
   {
     id: "011",
     label: "Rolling in the Deep - Adele",
-  },
-  {
-    id: "012",
-    label: "Shape of You - Ed Sheeran",
   },
   {
     id: "013",
