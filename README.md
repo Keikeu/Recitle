@@ -4,7 +4,7 @@
 
 > Can you recognise _Bohemian Rhapsody_ rewritten as a pirate shanty? Or _Blinding Lights_ retold by a caveman?
 
-🔗 **[Play the demo →](https://karolina.place/Recitle/)**
+🔗 **[Play the demo →](https://keikeu.github.io/Recitle/)**
 
 ---
 
