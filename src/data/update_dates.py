@@ -3,8 +3,8 @@ from datetime import date, timedelta
 with open("songs.const.js", "r") as f:
     content = f.read()
 
-old_start = date(2026, 4, 3)
-new_start = date(2026, 1, 1) # <- change this each time
+old_start = date(2026, 5, 2)
+new_start = date(2026, 5, 2) # <- change this each time
 
 for i in range(24):
     old = (old_start + timedelta(days=i)).isoformat()
