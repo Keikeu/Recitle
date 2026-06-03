@@ -108,7 +108,7 @@ function Home() {
       <Box>
         <Container>
           <Typography variant="paragraph" margin={32}>
-            No song found for today.
+            No song found for today. See the archive for previous songs.
           </Typography>
         </Container>
       </Box>
